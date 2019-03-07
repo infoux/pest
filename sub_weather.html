@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>병해충방제정보시스템</title>
+
+
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+
+    <!-- S:header -->
+    <header id="header">
+
+        <div class="container">
+            <div class="logo">
+                <h1><a href="#">로고</a></h1>
+            </div>
+
+            <button class="mobile_menu">메뉴열기<i class="icon-menu"></i></button>
+            <button class="mobile_login" 로그인><i class="icon-user"></i></button>
+        </div>
+        <!-- S:main_menu -->
+        <nav id="main_menu">
+            <div class="container">
+                <ul class="gnb">
+                    <li>
+                        <h2>
+                            <a href="">기상정보</a>
+                        </h2>
+                        <ul class="first">
+                            <li>
+                                <a class="active" href="">
+                                    <span>기상지도</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>기상통계</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>계절기상관측</span></a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="">서리정보</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>서리지도</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>서리통계</span></a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="">동해정보</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>동해지도</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="">병해충정보</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>병해충지도</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>국가관리병해충</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="">커뮤니티</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>공지사항</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>상담게시판</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>갤러리</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>동영상</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="util_menu">
+                    <li><a href=""><i class="icon-user"></i>로그인</a></li>
+                    <li><a href=""><i class="icon-th-large"></i>사이트맵</a></li>
+                </ul>
+
+            </div>
+        </nav>
+        <!-- E:main_menu -->
+    </header>
+    <!-- E:header -->
+    <!-- S:content -->
+    <div id="content">
+        <section class="title_wrap">
+            <div class="container">
+                <h3>
+                    <p>계절기상관측</p>
+                    <img src="images/sub_weather.jpg" alt="계절기상관측">
+                </h3>
+            </div>
+        </section>
+
+        <div class="crumb">
+            <ul>
+                <li class="home_btn">
+                    <h2><a href="#"><i class="icon-home"></i></a></h2>
+                </li>
+                <li class="crumb_btn">
+                    <h2 class="crumb_title"><a href="#">기상정보</a><i class="icon-plus"></i></h2>
+                    <ul class="crumb_menu">
+                        <li>
+                            <a href="#">기상정보</a>
+                        </li>
+                        <li>
+                            <a href="#">서리정보</a>
+                        </li>
+                        <li>
+                            <a href="#">동해정보</a>
+                        </li>
+                        <li>
+                            <a href="#">병해충정보</a>
+                        </li>
+                        <li>
+                            <a href="#">커뮤니티</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="crumb_btn">
+                    <h2 class="crumb_title"><a href="#">계절기상관측</a><i class="icon-plus"></i></h2>
+                    <ul class="crumb_menu">
+                        <li>
+                            <a href="#">기상지도</a>
+                        </li>
+                        <li>
+                            <a href="#">기상통계</a>
+                        </li>
+                        <li>
+                            <a href="#">계절기상관측</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <section class="checkbox">
+            <div>
+                <dl>
+                    <dt>지역선택</dt>
+                    <dd>
+                        <select>
+                            <option selected>지역을 선택하세요.</option>
+                            <option>제주시</option>
+                            <option>서귀포시</option>
+                        </select>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>관측자료선택</dt>
+                    <dd>
+                        <select>
+                            <option selected>관측자료를 선택하세요.</option>
+                            <option>서리</option>
+                            <option>눈</option>
+                            <option>얼음</option>
+                            <option>매화</option>
+                            <option>벚나무</option>
+                            <option>개나리</option>
+                            <option>진달래</option>
+                        </select>
+                    </dd>
+                </dl>
+                <button class="search">조회</button>
+            </div>
+        </section>
+
+
+
+        <article class="board_search">
+            <div class="container">
+                <button class="excel"><i class="icon-download-alt"></i>엑셀로 내려받기</button>
+                <h3 class="sr-only">게시판 검색</h3>
+
+                <fieldset>
+                    <legend class="sr-only">검색</legend>
+
+                    <label class="sr-only" for="search-option">검색범위</label>
+                    <select id="search-option" title="검색범위 선택">
+                            <option selected>년도</option>
+                            <option>날짜</option>
+                        </select>
+
+                    <label class="sr-only" for="search-text">검색어</label>
+                    <input id="search-text" name="search-text" type="text" title="검색어 입력">
+                    <button title="검색을 실행합니다."><i class='icon-search'></i>검색</button>
+
+                </fieldset>
+            </div>
+        </article>
+
+        <section class="weather_list">
+            <div class="container">
+                <table>
+                    <tbody>
+
+                        <tr>
+                            <th>년도</th>
+                            <th>첫 날짜</th>
+                            <th>평비</th>
+                            <th>마지막 날짜</th>
+                            <th>평비</th>
+                        </tr>
+                        <tr>
+                            <td>2014</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2013</td>
+                            <td>2014.01.24</td>
+                            <td>31</td>
+                            <td>2014.01.24</td>
+                            <td>-34</td>
+                        </tr>
+                        <tr>
+                            <td>2012</td>
+                            <td>2013.01.15</td>
+                            <td>22</td>
+                            <td>2013.03.06</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>2011</td>
+                            <td>2011.12.27</td>
+                            <td>3</td>
+                            <td>2012.02.20</td>
+                            <td>-7</td>
+                        </tr>
+                        <tr>
+                            <td>2010</td>
+                            <td>2011.01.14</td>
+                            <td>21</td>
+                            <td>2011.01.23</td>
+                            <td>-35</td>
+                        </tr>
+                        <tr>
+                            <td>2009</td>
+                            <td>2009.12.29</td>
+                            <td>5</td>
+                            <td>2010.01.17</td>
+                            <td>-41</td>
+                        </tr>
+                        <tr>
+                            <td>2008</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2007</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2006</td>
+                            <td>2007.01.11</td>
+                            <td>18</td>
+                            <td>2007.02.02</td>
+                            <td>-25</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <article class="pagenation">
+
+            <a class="jump" href="#" title="게시판의 처음으로 이동">처음<i class='icon-angle-left'></i></a>
+            <a class="move" href="#" title="게시판의 이전 페이지로 이동">이전<i class='icon-angle-double-left'></i></a>
+            <a href="#" title="게시판의 1 페이지로 이동">1</a>
+            <a href="#" title="게시판의 2 페이지로 이동">2</a>
+            <strong>3</strong>
+            <a href="#" title="게시판의 4 페이지로 이동">4</a>
+            <a href="#" title="게시판의 5 페이지로 이동">5</a>
+            <a class="move" href="" title="게시판의 다음 페이지로 이동">다음<i class='icon-angle-right'></i></a>
+            <a class="jump" href="" title="게시판의 마지막 페이지로 이동">마지막<i class='icon-angle-double-right'></i></a>
+
+        </article>
+
+    </div>
+    <!-- E:content -->
+    <!-- S:footer -->
+    <footer id="footer">
+        <div class="banner">
+            <div class="banner_wrap">
+                <img class="banner1" src="images/banner1.gif" alt="농촌진흥청">
+                <img class="banner2" src="images/banner2.gif" alt="제주지방기상청">
+                <img class="banner3" src="images/banner3.gif" alt="농림축산검역본부">
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="footer_info">
+                <h2>푸터로고</h2>
+
+                <ul class="footer_util">
+                    <li>
+                        <a href="#">개인정보처리방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#">저작권보호정책</a>
+                    </li>
+                </ul>
+
+                <ul class="adress">
+                    <li>
+                        (690-701) 제주특별자치도 서귀포시 중산간서로 212(강정동)
+                    </li>
+                    <li>
+                        TEL (064)760-7541~3
+                    </li>
+                    <li>
+                        FAX (064)760-7599
+                    </li>
+                </ul>
+
+                <div class="btn">
+                    <button class="error">오류신고</button>
+                    <button class="mobile">모바일버전 바로가기</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- E:footer -->
+
+</body>
+
+</html>

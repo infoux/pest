@@ -1,0 +1,127 @@
+
+
+.loadingPop {
+  position: fixed;
+  display: none;
+  z-index: 9999;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: #333;
+  text-align: center;
+  padding-top: 50vh;
+  font-weight: normal;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.loadingPop p {
+  margin: -85px 0 0 0;
+  display: block;
+  height: 170px;
+}
+
+.loadingPop h2 {
+  margin: 0;
+}
+
+.loadingPop i {
+  font-size: 120px;
+  margin-bottom: 20px;
+  color: #999;
+}
+
+.ltPop {
+  position: fixed;
+  display: block;
+  z-index: 9999;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: #333;
+  text-align: center;
+  padding-top: 200px;
+  font-weight: normal;
+  /* 기본 배경색 지정-투명도가 모두 적용되지 않았을 때 색상 */
+  background: #000000;
+  /* RGBa 적용 - Firefox, Chrome, Safari, Opera ... */
+  background: rgba(0, 0, 0, 0.8);
+  /* IE에서 Filter적용을 위해 배경을 지움 */
+  background: transparent;
+  /* 정상적인 Filter적용을 위해 zoom:1을 적용 */
+  zoom: 1;
+  /* IE5.5-7 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000, endColorstr=#80000000);
+  /* IE8,9 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000, endColorstr=#80000000)";
+}
+
+.ltPop p {
+  margin: -85px 0 0 0;
+  display: block;
+  height: 170px;
+}
+
+.ltPop h2 {
+  margin: 0;
+  color: #fff;
+}
+
+.ltPop i {
+  font-size: 120px;
+  margin-bottom: 20px;
+  color: #0066cc;
+}
+
+.ltPop a {
+  display: inline-block;
+  padding: 20px 30px;
+  margin: 30px 0;
+  background: #0066cc;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width:400px) {
+  #lodge_div_noti {
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    top: 400px;
+    margin: 0;
+    padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+    width: 100%;
+    background-color: #0066cc;
+  }
+}
+
+@media (min-width:400px) {
+  #lodge_div_noti {
+    z-index: 999;
+    position: absolute;
+    left: calc(50% - 200px);
+    top: 350px;
+    margin: 0;
+    padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+    width: 400px;
+    background-color: #0066cc;
+  }
+}
+
+#lodge_div_noti .title {
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.close_bt {
+  float: right;
+}
+
+#lodge_div_noti .contents {
+  display: block;
+  margin-top: 15px;
+  padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+  background-color: #ffffff;
+}

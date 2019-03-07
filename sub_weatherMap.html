@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>병해충방제정보시스템</title>
+
+
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+
+    <!-- S:header -->
+    <header id="header">
+
+        <div class="container">
+            <div class="logo">
+                <h1><a href="#">로고</a></h1>
+            </div>
+
+            <button class="mobile_menu">메뉴열기<i class="icon-menu"></i></button>
+            <button class="mobile_login" 로그인><i class="icon-user"></i></button>
+        </div>
+        <!-- S:main_menu -->
+        <div class="Allpopup">
+            <div>
+                <h4>전체지점 관측정보<i class="icon-esc"></i></h4>
+            </div>
+        </div>
+        <nav id="main_menu">
+            <div class="container">
+                <ul class="gnb">
+                    <li>
+                        <h2>
+                            <a href="">기상정보</a>
+                        </h2>
+                        <ul class="first">
+                            <li>
+                                <a class="active" href="">
+                                    <span>기상지도</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>기상통계</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>계절기상관측</span></a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="">서리정보</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>서리지도</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>서리통계</span></a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="">동해정보</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>동해지도</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="">병해충정보</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>병해충지도</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>국가관리병해충</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="">커뮤니티</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>공지사항</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>상담게시판</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>갤러리</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>동영상</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="util_menu">
+                    <li><a href=""><i class="icon-user"></i>로그인</a></li>
+                    <li><a href=""><i class="icon-th-large"></i>사이트맵</a></li>
+                </ul>
+
+            </div>
+        </nav>
+        <!-- E:main_menu -->
+    </header>
+    <!-- E:header -->
+    <!-- S:content -->
+    <div id="content">
+        <section class="title_wrap">
+            <div class="container">
+                <h3>
+                    <p>기상지도</p>
+                    <img src="images/sub_weatherMap.jpg" alt="기상지도">
+                </h3>
+            </div>
+        </section>
+
+        <div class="crumb">
+            <ul>
+                <li class="home_btn">
+                    <h2><a href="#"><i class="icon-home"></i></a></h2>
+                </li>
+                <li class="crumb_btn">
+                    <h2 class="crumb_title"><a href="#">기상정보</a><i class="icon-plus"></i></h2>
+                    <ul class="crumb_menu">
+                        <li>
+                            <a href="#">기상정보</a>
+                        </li>
+                        <li>
+                            <a href="#">서리정보</a>
+                        </li>
+                        <li>
+                            <a href="#">동해정보</a>
+                        </li>
+                        <li>
+                            <a href="#">병해충정보</a>
+                        </li>
+                        <li>
+                            <a href="#">커뮤니티</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="crumb_btn">
+                    <h2 class="crumb_title"><a href="#">기상지도</a><i class="icon-plus"></i></h2>
+                    <ul class="crumb_menu">
+                        <li>
+                            <a href="#">기상지도</a>
+                        </li>
+                        <li>
+                            <a href="#">기상통계</a>
+                        </li>
+                        <li>
+                            <a href="#">계절기상관측</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <section class="sub_map">
+            <div class="container">
+                <div class="map_wrap">
+                    <h3 class="map_img">서브지도</h3>
+
+                    <ul class="map_btn">
+                        <li><a href="#" data="position01">제주센터권역</a></li>
+                        <li><a href="#" data="position02">동부센터권역</a></li>
+                        <li><a href="#" data="position03">서귀포센터권역</a></li>
+                        <li><a href="#" data="position04">서부센터권역</a></li>
+                    </ul>
+
+                    <div class="spot_wrap position01">
+                        <h3>제주센터권역(9개소)<i class="icon-esc"></i></h3>
+                        <ul class="spot">
+                            <li class="spot1"><a href="#">농산물원종장</a></li>
+                            <li class="spot2 active"><a href="#" class="active">제주센터</a></li>
+                            <li class="spot3"><a href="#">신엄리</a></li>
+                            <li class="spot4"><a href="#">상귀리</a></li>
+                            <li class="spot5"><a href="#">노형동</a></li>
+                            <li class="spot6"><a href="#">오라2동</a></li>
+                            <li class="spot7"><a href="#">용강동</a></li>
+                            <li class="spot8"><a href="#">신촌리</a></li>
+                            <li class="spot9"><a href="#">와산리</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="spot_wrap position02">
+                        <h3>동부센터권역(9개소)<i class="icon-esc"></i></h3>
+                        <ul class="spot">
+                            <li class="spot10"><a href="#">동부센터</a></li>
+                            <li class="spot11"><a href="#">동복리</a></li>
+                            <li class="spot12"><a href="#">한동리</a></li>
+                            <li class="spot13"><a href="#">구좌 세화리</a></li>
+                            <li class="spot14"><a href="#">덕천리</a></li>
+                            <li class="spot15"><a href="#">수산리</a></li>
+                            <li class="spot16"><a href="#">삼달리</a></li>
+                            <li class="spot17"><a href="#">가시리</a></li>
+                            <li class="spot18"><a href="#">표선 세화리</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="spot_wrap position03">
+                        <h3>서귀포센터권역(11개소)<i class="icon-esc"></i></h3>
+                        <ul class="spot">
+                            <li class="spot19"><a href="#">서귀포센터</a></li>
+                            <li class="spot20"><a href="#">수망리</a></li>
+                            <li class="spot21"><a href="#">위미리</a></li>
+                            <li class="spot22"><a href="#">위미리2</a></li>
+                            <li class="spot23"><a href="#">상효동</a></li>
+                            <li class="spot24"><a href="#">동홍동</a></li>
+                            <li class="spot25"><a href="#">보목동</a></li>
+                            <li class="spot26"><a href="#">호근동</a></li>
+                            <li class="spot27"><a href="#">강정동</a></li>
+                            <li class="spot28"><a href="#">중문동</a></li>
+                            <li class="spot29"><a href="#">상예동</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="spot_wrap position04">
+                        <h3>서부센터권역(9개소)<i class="icon-esc"></i></h3>
+                        <ul class="spot">
+                            <li class="spot30"><a href="#">서부센터</a></li>
+                            <li class="spot31"><a href="#">감산리</a></li>
+                            <li class="spot32"><a href="#">서광리</a></li>
+                            <li class="spot33"><a href="#">인성리</a></li>
+                            <li class="spot34"><a href="#">신도리</a></li>
+                            <li class="spot35"><a href="#">저지리</a></li>
+                            <li class="spot36"><a href="#">두모리</a></li>
+                            <li class="spot37"><a href="#">동명리</a></li>
+                            <li class="spot38"><a href="#">귀덕리</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="search">
+                    <input type="text" placeholder="주소를 입력하세요.">
+                    <button><i class="icon-search"></i></button>
+                </div>
+
+                <div class="weather_info">
+                    <h3 class="weather_title">제주센터 | <small>21일(목) 오전 10:00 기준</small></h3>
+                    <i class="icon-cloud-inv"></i>
+                    <p class="weather">9℃<small>25m/s</small></p>
+
+                    <ul>
+                        <li>
+                            <strong>위도</strong>
+                            <u>33˚31´</u>
+                        </li>
+                        <li>
+                            <strong>경도</strong>
+                            <u>126˚32´</u>
+                        </li>
+                        <li>
+                            <strong>해발</strong>
+                            <u>102m</u>
+                        </li>
+                        <li>
+                            <strong>강수량</strong>
+                            <u>0mm</u>
+                        </li>
+                        <li>
+                            <strong>초상온도</strong>
+                            <u>13℃</u>
+                        </li>
+                        <li>
+                            <strong>일사량</strong>
+                            <u>1MJ/㎡</u>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="info_btn">
+                    <button>전체지점 관측정보</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="graph forecast">
+            <div class="container">
+                <h4>동네예보<small>2019년 01월 31일 (목) 14시 기상청 발표</small></h4>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="graph forecast_week">
+            <div class="container">
+                <h4>중기예보<small>2019년 01월 31일 (목) 14시 기상청 발표</small></h4>
+                <div></div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- E:content -->
+    <!-- S:footer -->
+    <footer id="footer">
+        <div class="banner">
+            <div class="banner_wrap">
+                <img class="banner1" src="images/banner1.gif" alt="농촌진흥청">
+                <img class="banner2" src="images/banner2.gif" alt="제주지방기상청">
+                <img class="banner3" src="images/banner3.gif" alt="농림축산검역본부">
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="footer_info">
+                <h2>푸터로고</h2>
+
+                <ul class="footer_util">
+                    <li>
+                        <a href="#">개인정보처리방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#">저작권보호정책</a>
+                    </li>
+                </ul>
+
+                <ul class="adress">
+                    <li>
+                        (690-701) 제주특별자치도 서귀포시 중산간서로 212(강정동)
+                    </li>
+                    <li>
+                        TEL (064)760-7541~3
+                    </li>
+                    <li>
+                        FAX (064)760-7599
+                    </li>
+                </ul>
+
+                <div class="btn">
+                    <button class="error">오류신고</button>
+                    <button class="mobile">모바일버전 바로가기</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- E:footer -->
+
+</body>
+
+</html>
