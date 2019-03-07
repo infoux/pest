@@ -574,7 +574,8 @@ body {
                .relative;
 
                @media all and (min-width: 1200px) {
-                    width: 1550px;
+                    width: 1200px;
+                    height: 60px;
                     margin: 0 auto;
                }
 
@@ -591,8 +592,8 @@ body {
                     .rem(height, 21);
     
                     @media all and (min-width: 1200px) {
-                        width: 256px;
-                        height: 34px;
+                        width: 200px;
+                        height: 27px;
                         float: left;
                     }
     
@@ -834,7 +835,7 @@ body {
                     z-index: -1;
                     left: 0;
                     right: 0;
-                    top: 62px;
+                    top: 60px;
                     bottom: 0;
                     background: #fff;
                     border-top: 1px solid #ccc;
@@ -843,7 +844,7 @@ body {
 
                 .container {
                     .relative;
-                    width: 1500px;
+                    width: 1200px;
                     margin: 0 auto;
                     border: none;
                     height: 61px;
@@ -853,13 +854,13 @@ body {
                         .mapazero;
                         .zero;
                         white-space:nowrap;
-                        width: 800px;
+                        width: 700px;
                         margin: 0 auto;
 
                         & > li {
                             .inline-block;
                             .top;
-                            width: 160px;
+                            width: 140px;
                             margin: 0 auto;
 
                             h2 {
@@ -977,7 +978,7 @@ body {
                                             .absolute;
                                             left: 0;
                                             right: 0;
-                                            top: 0px;
+                                            top: -2px;
                                             height: 3px;
                                             background: @main;
                                         }
@@ -1034,7 +1035,7 @@ body {
                     @media all and (min-width: 1200px) {
                         .absolute;
                         z-index: 999;
-                        top: 60px;
+                        top: 0;
                         left: 50%;
                         margin-left: -600px;
                         height: 100%;
@@ -1981,7 +1982,6 @@ body {
                         }
                         
                         div.box {
-                            // padding: 0;
                             
                             @media all and (min-width: 1200px) {
                                 height: 300px;
@@ -2004,6 +2004,10 @@ body {
                             @media all and (min-width: 1200px) {
                                 height: 300px;
                             } 
+
+                            img {
+                                .full;
+                            }
                         }
                     }
 
@@ -3021,6 +3025,14 @@ body {
                 }
             }
 
+            &.forecast {
+                .rem(margin, 40 0 30 0);
+
+                @media all and (min-width: 1200px) {
+                    margin: 60px 0 40px 0;
+                }
+            }
+
             .container {
                 .relative;
                 width: 100%;
@@ -3093,6 +3105,7 @@ body {
             }
         }
 
+
 /******* sub_weather *******/   
 
         section.checkbox {
@@ -3118,6 +3131,15 @@ body {
     
                     @media all and (min-width: 1200px) {
                         margin: 10px auto;
+                        display: inline;
+                    }
+
+                    &.day {
+
+                        @media all and (min-width: 1200px) {
+                            .block;
+                            margin-top: 20px;
+                        }
                     }
                     
                     dt {
@@ -3126,9 +3148,24 @@ body {
                         color: #454545;
     
                         @media all and (min-width: 1200px) {
-                            width: 140px;
+                            width: 100px;
                             font-size: 16px;
                             .inline-block;
+                        }
+
+                        &.observation {
+
+                            @media all and (min-width: 1200px) {
+                                width: 130px;
+                                margin-left: 50px;
+                            }
+                        }
+
+                        &.element {
+
+                            @media all and (min-width: 1200px) {
+                                margin-left: 50px;
+                            }
                         }
                     }
         
@@ -3212,21 +3249,19 @@ body {
                         margin: 0;
                         .absolute;
                         bottom: 0;
-                        left: 395px;
+                        left: 785px;
                         font-size: 14px;
                     }
 
                     &.weatherBtn {
 
                         @media all and (min-width: 1200px) {
-                            left: 645px;
+                            left: 600px;
                         }
                     }
                 }
             }
         }
-
-        
 
         section.weather_list {
             .rem(padding, 0 10);
@@ -3287,7 +3322,7 @@ body {
                 }
             }
         }
-            
+
 
 /******* sub_notice *******/
 
@@ -3615,238 +3650,127 @@ body {
                     }
                 }
             }
-
-            // &.weather_list {
-                
-            //     .container {
-
-            //         ul {
-
-            //             li {
-
-            //                 a {
-            //                     .zero;
-            //                     width: 100%;
-            //                     .rem(padding, 0 30);
-            //                     .inline-block;
-            //                     .rem(height, 50);
-            //                     border-bottom: 1px solid #EBEBEB;
-    
-            //                     @media all and (min-width: 1200px) {
-            //                         height: 52px;
-            //                         padding: 0;
-            //                     }
-    
-            //                     h4 {
-            //                         .rem(width, 160);
-            //                         .rem(font-size, 10);
-            //                         .normal;
-            //                         .ellipse;
-            //                         .rem(margin, 10 0 4);
-            //                         .inline-block;
-    
-            //                         @media all and (min-width: 1200px) {
-            //                             margin: 17px 0 0;
-            //                             width: 480px;
-            //                             font-size: 16px;
-            //                             padding: 0;
-            //                         }
-
-            //                         &.last_date {
-            //                             margin: 0;
-                                        
-            //                             @media all and (min-width: 1200px) {
-            //                                 width: 240px;
-            //                                 margin-left: 10px;
-            //                             }
-
-            //                             &>u {
-            //                                 margin: 0;
-            //                             }
-            //                         }
-    
-            //                         &>u {
-            //                             .zero;
-            //                             .rem(margin-right, 70);
-
-            //                             @media all and (min-width: 1200px) {
-            //                                 margin-right: 72px;
-            //                             }
-            //                         }
-    
-            //                         small {
-            //                             .rem(font-size, 10);
-            //                             .inline-block;
-            //                             .center; 
-            //                             width: 15%;
-    
-            //                             @media all and (min-width: 1200px) {
-            //                                 width: 240px;
-            //                                 font-size: 16px;
-            //                             }
-    
-            //                             u {
-            //                                 .zero;
-            //                             }
-            //                         }
-            //                     }
-    
-            //                     dl {
-            //                         .inline-block;
-            //                         padding: 0;
-            //                         // margin: 0 0 0 15%;
-            //                         color:#454545;
-            //                         .zero;
-    
-            //                         @media all and (min-width: 1200px) {
-            //                             .top;
-            //                             margin: 17px 0 0 0;
-            //                         }
-    
-            //                         dt {
-            //                             .none;
-            //                         }
-    
-            //                         dd {
-            //                             .relative;
-            //                             margin: 0;
-            //                             .rem(padding, 0 6);
-            //                             .rem(font-size, 10);
-    
-            //                             @media all and (min-width: 1200px) {
-            //                                 padding: 0;
-            //                                 .center;
-            //                                 width: 240px;
-            //                                 font-size: 16px;
-            //                             }
-    
-            //                             &:first-of-type {
-            //                                 padding-left: none;
-    
-            //                                 @media all and (min-width: 1200px) {
-            //                                     width: 240px;
-            //                                     margin-left: 5px;
-            //                                 }
-            //                             }
-    
-            //                             &::after {
-            //                                 .none;
-    
-            //                                 @media all and (min-width: 1200px) {
-            //                                     .none;
-            //                                 }
-            //                             }
-    
-            //                             &:last-of-type {
-    
-            //                                 @media all and (min-width: 1200px) {
-            //                                     width: 225px;
-            //                                 }
-    
-            //                                 &::after {
-            //                                     .none;
-            //                                 }
-            //                             }
-            //                         }
-            //                     }
-            //                 }
-
-            //                 &:first-child {
-
-            //                     a {
-                                    
-                                    
-            //                         h4 {
-
-            //                             small {
-
-            //                                 u {
-            //                                     .block;
-            //                                     .rem(width, 26);
-            //                                     .center;
-            //                                     .rem(font-size, 12);
-            //                                     text-decoration: none;
-            //                                     .absolute;
-            //                                     .rem(top, 15);
-    
-            //                                     @media all and (min-width: 1200px) {
-            //                                         width: 240px;
-            //                                         top: 20px;
-            //                                         font-size: 16px;
-            //                                     }
-            //                                 }
-            //                             }
-    
-            //                             &>u {
-            //                                 .block;
-            //                                 .rem(width, 50);
-            //                                 .center;
-            //                                 .rem(font-size, 12);
-            //                                 text-decoration:none;
-            //                                 .absolute;
-            //                                 .rem(top, 15);
-            //                                 .rem(left, 84);
-    
-            //                                 @media all and (min-width: 1200px) {
-            //                                     font-size: 16px;
-            //                                     width: 240px;
-            //                                     top: 20px;
-            //                                     left: 240px;
-            //                                 }
-                                            
-            //                             }
-
-            //                             &.last_date {
-
-            //                                 &>u {
-            //                                     .rem(width, 60);
-            //                                     .rem(left, 220);
+        }
 
 
-            //                                     @media all and (min-width: 1200px) {
-            //                                         left: 720px;
-            //                                         width: 240px;
-            //                                     }
-            //                                 }
-            //                             }
-            //                         }
+/******* sub_notice *******/
 
-            //                         dl {
-            //                             .rem(font-size, 12);
+        section.board_write {
+            .rem(padding, 0 10);
 
-            //                             &.last {
-                                            
-            //                                 dt {
-            //                                     // .rem(width, )
+            @media all and (min-width: 1200px) {
+                padding: 0;
+            }
 
-            //                                     @media all and (min-width: 1200px) {
-            //                                         .block;
-            //                                         left: 479px;
-            //                                     }
-            //                                 }
-            //                             }
+            .container {
 
-            //                             dt {
-            //                                 .none;
-            //                                 .absolute;
-            //                                 .center;
-            //                                 .rem(top, 15);
+                @media all and (min-width: 1200px) {
+                    width: 1200px;
+                    margin: 0 auto;
+                }
 
-            //                                 @media all and (min-width: 1200px) {
-            //                                     .block;
-            //                                     top: 20px;
-            //                                     width: 240px;
-            //                                     font-size: 16px;
-            //                                     left: 960px;
-            //                                 }
-            //                             }
-            //                         }
-            //                     }
-            //                 }
-            //             }
-            //         }
-            //     }
-            // }
+                .board_title {
+                    border-top: 2px solid @main;
+                    border-bottom: 1px solid #ebebeb;
+                    .rem(margin-top, 30);
+                    .rem(height, 34);
+
+                    @media all and (min-width: 1200px) {
+                        margin-top: 60px;
+                        height: 58px;
+                    }
+
+                    input {
+                        font-weight: 400;
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                        outline: none;
+                        color: #333;
+                        .rem(font-size, 12);
+                        .rem(padding-left, 10);
+
+                        @media all and (min-width: 1200px) {
+                            font-size: 16px;
+                            padding-left: 20px;
+                        }
+                    }
+                }
+
+                .board_file {
+                    border-bottom: 1px solid #ebebeb;
+                    .rem(padding, 10 0);
+
+
+                    @media all and (min-width: 1200px) {
+                        padding: 20px 0;
+                    }
+
+                    input {
+                        font-weight: 400;
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                        outline: none;
+                        color: #333;
+                        .rem(font-size, 12);
+                        .rem(padding-left, 10);
+
+                        @media all and (min-width: 1200px) {
+                            font-size: 16px;
+                            padding-left: 20px;
+                        }
+                    }
+                }
+
+                .board_text {
+                    border-bottom: 2px solid #ebebeb;
+                    .rem(height, 200);
+                    .rem(padding, 10 0);
+                    .rem(margin-bottom, 10);
+
+                    @media all and (min-width: 1200px) {
+                        height: 500px;
+                        padding: 20px 0;
+                        margin-bottom: 20px;
+                    }
+
+                    textarea {
+                        font-weight: 400;
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                        outline: none;
+                        color: #333;
+                        .rem(font-size, 12);
+                        .rem(padding-left, 10);
+
+                        @media all and (min-width: 1200px) {
+                            font-size: 16px;
+                            padding-left: 20px;
+                        }
+                    }
+                }
+
+                .board_btn {
+                    .right;
+  
+                    button {
+                        border: 1px solid #ccc;
+                        background: #f7f7f7;
+                        .pointer;
+                        .rem(padding, 5 10);
+                        .rem(margin, 0 0 30 3);
+                        .rem(font-size, 10);
+                        
+                        @media all and (min-width: 1200px) {
+                            padding: 10px 20px;
+                            margin: 0 0 60px 5px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
         }
 
 /******* login *******/
@@ -3865,11 +3789,11 @@ body {
                 h3 {
                     .rem(font-size, 22);
                     font-weight: 400;
-                    .rem(margin, 50 0 0 0);
+                    .rem(margin, 60 0 0 0);
 
                     @media all and (min-width: 1200px) {
                         font-size: 32px;
-                        margin: 100px 0 20px 0;
+                        margin: 200px 0 20px 0;
                     }
                 }
 
@@ -4011,6 +3935,7 @@ body {
         }
     }
     
+
     /* footer */
     footer#footer {
 
