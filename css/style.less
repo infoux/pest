@@ -513,7 +513,6 @@ body {
     }
 }
 
-
 div[id^=monthpicker_] {
     .block;
     background:@white;
@@ -3699,26 +3698,63 @@ body {
 
                 .board_file {
                     border-bottom: 1px solid #ebebeb;
-                    .rem(padding, 10 0);
-
+                    .rem(padding, 10 0 10 10);
 
                     @media all and (min-width: 1200px) {
-                        padding: 20px 0;
+                        padding: 12px 0 12px 20px;
                     }
 
-                    input {
-                        font-weight: 400;
-                        width: 100%;
-                        height: 100%;
-                        border: none;
-                        outline: none;
-                        color: #333;
-                        .rem(font-size, 12);
-                        .rem(padding-left, 10);
+                    .input_file {
+                        .inline-block;
+    
+                        input[type="file"] {
+                            .absolute;
+                            padding: 0;
+                            margin: -1px;
+                            clip: rect(0, 0, 0, 0);
+                            border: 0 none;
+                            width: 1px;
+                            height: 1px;
+                            .hidden;
+                        }
 
-                        @media all and (min-width: 1200px) {
-                            font-size: 16px;
-                            padding-left: 20px;
+                        .file_label {
+                            .inline-block;
+                            background: #f7f7f7;
+                            border: 1px solid #ccc;
+                            color: #454545;
+                            .pointer;
+                            .rem(height, 22);
+                            .rem(line-height, 22);
+                            .rem(font-size, 10);
+                            .rem(padding, 0 8);
+                            .rem(margin-left, 2);
+                            
+                            @media all and (min-width: 1200px) {
+                                height: 34px;
+                                line-height: 34px;
+                                padding: 0 10px;
+                                font-size: 14px;
+                                margin-left: 5px;
+                            }
+                        }
+
+                        .file_name {
+                            border: 1px solid #ccc;
+                            .bottom;
+                            .rem(width, 120);
+                            .rem(height, 22);
+                            .rem(line-height, 22);
+                            .rem(font-size, 10);
+                            .rem(padding-left, 2);
+
+                            @media all and (min-width: 1200px) {
+                                width: 200px;
+                                height: 34px;
+                                line-height: 34px;
+                                padding-left: 5px;
+                                font-size: 14px;
+                            }
                         }
                     }
                 }
@@ -3933,8 +3969,286 @@ body {
                 }
             }
         }
-    }
+
+/******* error *******/
+
+        div.error_notice {
+            width: 100%;
+            .rem(height, 70);
+            background: #eee;
+            .rem(padding, 0 20);
+
+            @media all and (min-width: 1200px) {
+                height: 100px;
+                padding: 0;
+            }
+
+            .container {
+                .relative;
+
+                @media all and (min-width: 1200px) {
+                    width: 1200px;
+                    margin: 0 auto;
+                }
+
+                img {
+                    .absolute;
+                    .rem(width, 50);
+                    .rem(top, 10);
+                    left: 0;
+
+                    @media all and (min-width: 1200px) {
+                        width: 70px;
+                        top: 14px;
+                        left: 240px;
+                    }
+                }
+
+                h4 {
+                    .absolute;
+                    .rem(top, 23);
+                    .rem(left, 60);
+                    .rem(line-height, 14);
+                    margin: 0;
+                    font-weight: 400;
+                    .rem(font-size, 10);
+                    white-space:normal;
+
+                    @media all and (min-width: 1200px) {
+                        font-size: 18px;
+                        color: #454545;
+                        top: 42px;
+                        left: 340px;
+                    }
+                }
+            }
+        }
+
+        section.error {
+            width: 100%;
+            .rem(padding, 10);
+
+            @media all and (min-width: 1200px) {
+                padding: 0;
+            }
+
+            .container {
+
+                @media all and (min-width: 1200px) {
+                    width: 1200px;
+                    margin: 0 auto;
+                }
+
+                .error_title {
+                    border-top: 2px solid @main;
+                    border-bottom: 1px solid #ebebeb;
+                    .rem(margin-top, 30);
+                    .rem(height, 34);
+
+                    @media all and (min-width: 1200px) {
+                        margin-top: 60px;
+                        height: 58px;
+                    }
+
+                    input {
+                        font-weight: 400;
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                        outline: none;
+                        color: #333;
+                        .rem(font-size, 12);
+                        .rem(padding-left, 10);
+
+                        @media all and (min-width: 1200px) {
+                            font-size: 16px;
+                            padding-left: 20px;
+                        }
+                    }
+                }
+
+                .email {
+                    border-bottom: 1px solid #ebebeb;
+                    .rem(height, 34);
+                    .rem(padding, 6 0 0 10);
+
+                    @media all and (min-width: 1200px) {
+                        height: 58px;
+                        padding: 12px 0 0 20px;
+                    }
+
+                    input {
+                        font-weight: 400;
+                        border: 1px solid #ccc;
+                        outline: none;
+                        color: #333;
+                        .rem(font-size, 12);
+                        .rem(width, 70);
+                        .rem(height, 22);
+
+                        @media all and (min-width: 1200px) {
+                            width: 160px;
+                            font-size: 16px;
+                            height: 34px;
+                            padding-left: 5px;
+                        }
+                    }
+
+                    span {
+                        .rem(font-size, 8);
+                        .rem(margin, 0 3);
+
+                        @media all and (min-width: 1200px) {
+                            font-size: 12px;
+                            margin: 0 10px;
+                        }
+                    }
+
+                    select {
+                        font-weight: 400;
+                        border: 1px solid #ccc;
+                        outline: none;
+                        color: #333;
+                        .rem(font-size, 10);
+                        .rem(width, 70);
+                        .rem(height, 22);
+                        .rem(margin-left, 5);
+                        .top;
+
+                        @media all and (min-width: 1200px) {
+                            font-size: 14px;
+                            width: 140px;
+                            height: 34px;
+                            margin-left: 10px;
+                            padding-left: 5px;
+                        }
+                    }
+                }
+
+                .error_text {
+                    border-bottom: 1px solid #ebebeb;
+                    .rem(height, 200);
+                    .rem(padding, 10 0);
+
+                    @media all and (min-width: 1200px) {
+                        height: 500px;
+                        padding: 20px 0;
+                    }
+
+                    textarea {
+                        font-weight: 400;
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                        outline: none;
+                        color: #333;
+                        .rem(font-size, 12);
+                        .rem(padding-left, 10);
+
+                        @media all and (min-width: 1200px) {
+                            font-size: 16px;
+                            padding-left: 20px;
+                        }
+                    }
+                }
+
+                .error_file {
+                    border-bottom: 2px solid #ebebeb;
+                    .rem(padding, 10 10 0 10);
+
+
+                    @media all and (min-width: 1200px) {
+                        padding: 20px 0 0 20px;
+                    }
+
+                    .input_file {
+                        .inline-block;
     
+                        input[type="file"] {
+                            .absolute;
+                            padding: 0;
+                            margin: -1px;
+                            clip: rect(0, 0, 0, 0);
+                            border: 0 none;
+                            width: 1px;
+                            height: 1px;
+                            .hidden;
+                        }
+
+                        .file_label {
+                            .inline-block;
+                            background: #f7f7f7;
+                            border: 1px solid #ccc;
+                            color: #454545;
+                            .pointer;
+                            .rem(height, 22);
+                            .rem(line-height, 22);
+                            .rem(font-size, 10);
+                            .rem(padding, 0 8);
+                            .rem(margin-left, 2);
+                            
+                            @media all and (min-width: 1200px) {
+                                height: 34px;
+                                line-height: 34px;
+                                padding: 0 10px;
+                                font-size: 14px;
+                                margin-left: 5px;
+                            }
+                        }
+
+                        .file_name {
+                            border: 1px solid #ccc;
+                            .bottom;
+                            .rem(width, 120);
+                            .rem(height, 22);
+                            .rem(line-height, 22);
+                            .rem(font-size, 10);
+                            .rem(padding-left, 2);
+
+                            @media all and (min-width: 1200px) {
+                                width: 200px;
+                                height: 34px;
+                                line-height: 34px;
+                                padding-left: 5px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+
+                    p {
+                        font-weight: 400;
+                        .rem(font-size, 10);
+                        color: #666;
+
+                        @media all and (min-width: 1200px) {
+                            font-size: 14px;
+                            margin: 15px 0 20px 0;
+                        }
+                    }
+                }
+
+                .error_btn {
+                    .right;
+  
+                    button {
+                        border: 1px solid #ccc;
+                        background: #f7f7f7;
+                        color: #333;
+                        .pointer;
+                        .rem(padding, 5 10);
+                        .rem(margin, 10 0 30 3);
+                        .rem(font-size, 10);
+                        
+                        @media all and (min-width: 1200px) {
+                            padding: 10px 20px;
+                            margin: 20px 0 60px 5px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     /* footer */
     footer#footer {
@@ -3957,8 +4271,9 @@ body {
                     margin: 0 auto;
                     padding: 12px 0;
                 }
-                
-                img {
+
+                a {
+                    .inline-block;
                     .rem(width, 60);
                     .rem(height, 18);
                     .rem(margin-right, 8);
@@ -3983,6 +4298,11 @@ body {
                         @media all and (min-width: 1200px) {
                             width: 130px;
                         }
+                    }
+
+                    img {
+                        width:  100%;
+                        height: 100%;
                     }
                 }
             }

@@ -136,20 +136,52 @@
     <!-- E:header -->
     <!-- S:content -->
     <div id="content">
-        <section class="login_wrap">
+        <section class="title_wrap">
             <div class="container">
+                <h3>
+                    <p>오류신고</p>
+                    <img src="images/sub_error.jpg" alt="오류신고">
+                </h3>
+            </div>
+        </section>
 
-                <h3>로그인</h3>
+        <div class="error_notice">
+            <div class="container">
+                <img src="images/error.svg" alt="에러">
+                <h4>사이트를 이용하시면서 개선사항이나 오류에 대한 의견을 주시면 신속하게 처리하겠습니다.</h4>
+            </div>
+        </div>
 
-                <p>기존에 사용하는 계정으로 간편하게 로그인하세요.</p>
+        <section class="error">
+            <div class="container">
+                <div class="error_title">
+                    <input type="text" placeholder="제목을 입력하세요.">
+                </div>
 
-                <ul class="login">
-                    <li><img src="images/facebook.png" alt="페이스북"><a href="#">페이스북 로그인</a></li>
-                    <li><img src="images/kakao.png" alt="카카오톡"><a href="#">카카오톡 로그인</a></li>
-                    <li><img src="images/naver.png" alt="네이버"><a href=# "">네이버 로그인</a></li>
-                    <li><img src="images/instagram.png" alt="인스타그램"><a href="#">인스타그램 로그인</a></li>
-                    <li><img src="images/google.png" alt="구글"><a href="#">구글 로그인</a></li>
-                </ul>
+                <div class="email">
+                    <input type="text"> <span>@</span> <input type="text">
+                    <select>
+                        <option selected>직접입력</option>
+                    </select>
+                </div>
+
+                <div class="error_text">
+                    <textarea placeholder="내용을 입력하세요."></textarea>
+                </div>
+
+                <div class="error_file">
+                    <div class="input_file">
+                        <input type="text" readonly="readonly" class="file_name">
+                        <label for="upload01" class="file_label">파일 업로드</label>
+                        <input type="file" name="" id="upload01" class="file_upload">
+                    </div>
+                    <p>* 첨부 용량 초과 시 작성했던 내용이 초기화될 수 있으니 주의바랍니다.</p>
+                </div>
+
+                <div class="error_btn">
+                    <button class="cancel">취소</button>
+                    <button class="save">등록</button>
+                </div>
             </div>
         </section>
 
