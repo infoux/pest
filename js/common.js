@@ -147,6 +147,10 @@ $(document).ready(function() {
         $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat top / cover");
     });
 
+    $("ul.gallery_list p").each(function() {
+        $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat top / cover");
+    });
+
     // popup 
 
     $(".Allpopup").hide();
