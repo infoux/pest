@@ -3435,7 +3435,7 @@ body {
         section.board_list {
             .relative;
             .rem(padding, 0 10);
-            .rem(margin, 20 0 20 0);
+            .rem(margin, 20 0 10 0);
 
             @media all and (min-width: 1200px) {
                 width: 1200px;
@@ -3651,8 +3651,34 @@ body {
             }
         }
 
+        div.notice_btn {
+            .right;
+            .rem(padding, 0 10);
 
-/******* sub_notice *******/
+            @media all and (min-width: 1200px) {
+                width: 1200px;
+                margin: 0 auto;
+            }
+
+            button {
+                border: 1px solid #ccc;
+                background: #f7f7f7;
+                color: #333;
+                .pointer;
+                .rem(padding, 5 10);
+                .rem(margin-bottom, 10);
+                .rem(font-size, 10);
+                
+                @media all and (min-width: 1200px) {
+                    padding: 10px 20px;
+                    margin-bottom: 20px;
+                    font-size: 14px;
+                }
+            }
+        }
+
+
+/******* sub_noticeWrite *******/
 
         section.board_write {
             .rem(padding, 0 10);
