@@ -3844,6 +3844,43 @@ body {
                     margin: 0 auto;
                 }
 
+                .detail {
+                    border-bottom: 1px solid #ebebeb;
+                    .rem(height, 34);
+                    .rem(line-height, 34);
+                    .rem(padding, 0 10);
+                    color: #454545;
+
+                    @media all and (min-width: 1200px) {
+                        height: 58px;
+                        line-height: 58px;
+                        padding: 0 20px;
+                    }
+
+                    dl {
+                        margin: 0;
+                        
+                        dt {
+                            .inline-block;
+                            .rem(font-size, 12);
+                            .rem(width, 60);
+
+                            @media all and (min-width: 1200px) {
+                                font-size: 16px;
+                            }
+                        }
+
+                        dd {
+                            .inline-block;
+                            .rem(font-size, 12);
+
+                            @media all and (min-width: 1200px) {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+
                 .board_title {
                     border-top: 2px solid @main;
                     border-bottom: 1px solid #ebebeb;
@@ -3960,6 +3997,19 @@ body {
                         @media all and (min-width: 1200px) {
                             font-size: 16px;
                             padding-left: 20px;
+                        }
+                    }
+
+                    p {
+                        margin: 0;
+                        .rem(padding, 0 10);
+                        .rem(font-size, 12);
+                        .rem(line-height, 18);
+                        color: #454545;
+
+                        @media all and (min-width: 1200px) {
+                            font-size: 16px;
+                            padding: 0 20px;
                         }
                     }
                 }
