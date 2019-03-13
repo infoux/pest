@@ -151,6 +151,11 @@ $(document).ready(function() {
         $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat top / cover");
     });
 
+    $("ul.photo p").each(function() {
+        $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat top / cover");
+    });
+
+
     // popup 
 
     $(".Allpopup").hide();

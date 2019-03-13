@@ -3121,6 +3121,46 @@ body {
                 margin-bottom: 50px;
             }
 
+            &.observatory_info {
+                .rem(margin-bottom, 30);
+
+                @media all and (min-width: 1200px) {
+                    margin-bottom: 0;
+                }
+
+                 dl {
+                    .block;
+
+                    @media all and (min-width: 1200px) {
+                        margin-bottom: 15px;
+                    }
+
+                    dt {
+                        color: @main;
+                        .rem(margin, 10 0 3);
+
+                        @media all and (min-width: 1200px) {
+                            margin: 0;
+                        }
+                    }
+
+                    dd {
+                        color: #454545;
+                        .rem(font-size, 10);
+                        .rem(margin-bottom, 5);
+
+                        @media all and (min-width: 1200px) {
+                            font-size: 16px;
+                            margin-bottom: 0;
+                        }
+
+                        select {
+                            margin-bottom: 0;
+                        }
+                    }
+                 }
+            }
+
             div {
 
                 @media all and (min-width: 1200px) {
@@ -3177,6 +3217,7 @@ body {
                         margin: 0;
                         width: 100%;
                         .inline-block;
+                        .rem(font-size, 10);
     
                         @media all and (min-width: 1200px) {
                             width: 240px;
@@ -3944,6 +3985,7 @@ body {
             }
         }
 
+
 /******* sub_gallery *******/
 
         ul.gallery_list {
@@ -4080,6 +4122,136 @@ body {
                 }
             }
         }
+
+
+/******* sub_observatory *******/
+
+        ul.photo {
+            .no-list;
+            .mapazero;
+            .rem(padding, 0 10);
+
+            @media all and (min-width: 1200px) {
+                width: 1200px;
+                margin: 60px auto 0;
+                padding: 0;
+            }
+
+            li {
+                border:  1px solid #ccc;
+                .rem(margin-bottom, 12);
+                .center;
+
+                @media all and (min-width: 1200px) {
+                    .inline-block;
+                    width: calc(~"(100% - 60px)/5");
+                    margin-left: 11px;
+                }
+
+                &:nth-child(1) {
+                    
+                    @media all and (min-width: 1200px) {
+                        margin-left: 0;
+                    }   
+                }
+
+                p {
+                    .hidden;
+                    .mapazero;
+                    font-size: 0;
+                    width: 100%;
+                    .rem(height, 200);
+                    padding: 0 -25%;
+
+                    @media all and (min-width: 1200px) {
+                        height: 240px;
+                        padding: 0 110px;
+                    }
+
+                    img {
+                        .none;
+                    }
+                }
+
+                h4 {
+                    font-weight: 400;
+                    color: #454545;
+                    .rem(font-size, 12);
+
+                    @media all and (min-width: 1200px) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+       .observatory_table {
+        .rem(padding, 0 10);
+
+        @media all and (min-width: 1200px) {
+            padding: 0;
+        }
+        
+        .container {
+            border-top: 2px solid @main;
+            width: 100%;
+            border-spacing: 0;
+            padding: 0;
+            border-collapse: collapse;
+            .rem(font-size, 10);
+            .rem(margin, 20 0 10);
+
+            @media all and (min-width: 1200px) {
+                width: 1200px;
+                margin: 20px auto;
+                font-size: 16px;
+            }
+
+
+            table {
+                width: 100%;
+                border-spacing: 0;
+                .rem(margin-bottom, 30);
+
+                @media all and (min-width: 1200px) {
+                    margin-bottom: 60px;
+                }
+
+                tbody {
+
+                    th {
+                        font-weight: 400;
+                        .rem(padding, 12 5);
+                        .middle;
+                        .center;
+                        background: #f7f7f7;
+                        color: #333;
+
+                        @media all and (min-width: 1200px) {
+                            width: 240px;
+                            padding: 18px 0;
+                        }
+                    }
+
+                    td {
+                        .rem(padding, 12 0);
+                        border-bottom: 1px solid #ebebeb;
+                        .middle;
+                        .center;
+                        color: #454545;
+
+                        @media all and (min-width: 1200px) {
+                            padding: 18px 0;
+                        }
+
+                        span {
+                            .block;
+                        }
+                    }
+                }
+            }
+        }
+       }
 
 /******* login *******/
 
@@ -4241,6 +4413,7 @@ body {
                 }
             }
         }
+
 
 /******* error *******/
 
