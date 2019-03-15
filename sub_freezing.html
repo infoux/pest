@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>병해충방제정보시스템</title>
+
+
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+
+    <!-- S:header -->
+    <header id="header">
+
+        <div class="container">
+            <div class="logo">
+                <h1><a href="#">로고</a></h1>
+            </div>
+
+            <button class="mobile_menu">메뉴열기<i class="icon-menu"></i></button>
+            <button class="mobile_login" 로그인><i class="icon-user"></i></button>
+        </div>
+        <!-- S:main_menu -->
+        <div class="pop freezing_popup">
+            <div>
+                <h4>동해 피해정보 범례<i class="icon-esc"></i></h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>피해정보</th>
+                            <th>피해정도</th>
+                            <th>동해정보</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>없음</td>
+                            <td>동해 피해가 없음</td>
+                            <td>
+                                <p>감귤 -3.5℃</p>
+                                <span><i class="icon-ok-circled2"></i>없음</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>주의</td>
+                            <td>기온이 동해피해온도에 가까이 내려가거나, 기온하강정도가 3℃/h 이상일 때</td>
+                            <td>
+                                <p>감귤 -3.5℃</p>
+                                <span class="attention"><i class="icon-attention-alt"></i>주의</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>경고</td>
+                            <td>기온이 동해피해온도에 가까이 내려가고 기온하강속도가 5℃/h 이상일 때, 또는 기온이 동해피해 온도보다 작고 기온 하강속도가 5℃/h 이하일 때</td>
+                            <td>
+                                <p>감귤 -3.5℃</p>
+                                <span class="warning"><i class="icon-attention-alt"></i>경고</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>위험</td>
+                            <td>기온이 동해피해온도보다 작고 지속시간이 3시간 이상일 때, 또는 기온이 동해피해온도보다 작고 기온하강속도가 5℃/h 이상일 때</td>
+                            <td>
+                                <p>감귤 -3.5℃</p>
+                                <span class="danger"><i class="icon-block-1"></i>위험</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="pop tip_popup">
+            <div>
+                <h4>한파 농작물 관리요령<i class="icon-esc"></i></h4>
+
+                <div>
+                    <h5>감귤류 및 시설하우스</h5>
+                    <p class="tip_title">- 사전대책</p>
+                    <p>① 가온하우스</p>
+                    <ul>
+                        <li>열풍기(연통) 가동, 피복전선, 유류탱크 잔량 확인, 화재예방</li>
+                    </ul>
+                    <p>② 무가온하우스</p>
+                    <ul>
+                        <li>영하 3℃ 이하의 극한 온도 예보 또는 중산간 지역
+                            <ul>
+                                <li>열풍송풍기 600평당 3대, 유동송풍기 20평당 1대</li>
+                                <li>모닥불, 연기 피우기 300평당 3~4개소</li>
+                                <li>열풍기 사용을 권장</li>
+                            </ul>
+                        </li>
+                        <li>영하 3℃ 이상의 저온 예보 또는 중산간 지역
+                            <ul>
+                                <li>한라산 방향, 해안방향의 측창 폐쇄</li>
+                                <li>눈이 쌓일 정도이면 모든 측창 폐쇄</li>
+                                <li>모닥불, 연기 피우기 300평당 3~4개소</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>③ 노지감귤</p>
+                    <ul>
+                        <li>수확은 가능한 12월 15일까지는 마무리</li>
+                        <li>눈이 내려 쌓이면 무게로 인하여 가지가 부러질 수 있으므로 쌓인 눈은 쓸어내림</li>
+                        <li>성목은 부직포 또는 비닐로 나무 전체를 덮어 씌워 고정 함</li>
+                        <li>어린 나무는 PP마대로 덮어 씌워 바람을 맞지 않도록 함</li>
+                    </ul>
+                    <p>④ 공통사항</p>
+                    <ul>
+                        <li>동파예방을 위해 농업용수, 양수기 모터, 동력분무기 등은 물을 뺌</li>
+                    </ul>
+                    <p class="tip_title top">- 사후대책</p>
+                    <p>① 비닐하우스 완전파손의 경우</p>
+                    <ul>
+                        <li>파손된 철골 구주조물 및 폐비닐 철거 작업 시행</li>
+                    </ul>
+                    <p>② 비닐하우스 부분파손의 경우</p>
+                    <ul>
+                        <li>반파된 비닐하우스는 2차 피해 예방을 위한 결속 조치를 하고 자체 수리 가능 여부 판단</li>
+                        <li>철거 시 시공업체에 교체용 자재 주문 생산 의뢰 함</li>
+                        <li>눈에 눌려 부러진 가지 등을 잘라내고 자른 부위에 도포제 발라줌</li>
+                        <li>저온피해 예방을 위해 하우스내부 건전한 부분은 비닐로 차단 함</li>
+                    </ul>
+                    <p>③ 비닐하우스 비닐만 파손된 경우</p>
+                    <ul>
+                        <li>비닐주문 및 인력확보 재피복, 고장정비 작업 시행</li>
+                    </ul>
+                    <p>노지감귤</p>
+                    <ul>
+                        <li>눈이 내려 쌓이면 무게로 인하여 가지가 부러질 수 있으므로 쌓인 눈은 쓸어내림</li>
+                    </ul>
+                    <p>④ 공통사항</p>
+                    <ul>
+                        <li>동파된 농업용수, 양수기 모터, 동력분무기 등은 조속히 수리</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <nav id="main_menu">
+            <div class="container">
+                <ul class="gnb">
+                    <li>
+                        <h2>
+                            <a href="">기상정보</a>
+                        </h2>
+                        <ul class="first">
+                            <li>
+                                <a class="active" href="">
+                                    <span>기상지도</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>기상통계</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>계절기상관측</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>기상용어</span></a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="">서리정보</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>서리지도</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>서리통계</span></a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="">동해정보</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>동해지도</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="">병해충정보</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>병해충지도</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>국가관리병해충</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="">커뮤니티</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>공지사항</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>상담게시판</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>갤러리</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>동영상</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="util_menu">
+                    <li><a href=""><i class="icon-user"></i>로그인</a></li>
+                    <li><a href=""><i class="icon-th-large"></i>사이트맵</a></li>
+                </ul>
+
+            </div>
+        </nav>
+        <!-- E:main_menu -->
+    </header>
+    <!-- E:header -->
+    <!-- S:content -->
+    <div id="content">
+        <section class="title_wrap">
+            <div class="container">
+                <h3>
+                    <p>동해지도</p>
+                    <img src="images/sub_freezing.jpg" alt="동해지도">
+                </h3>
+            </div>
+        </section>
+
+        <div class="crumb">
+            <ul>
+                <li class="home_btn">
+                    <h2><a href="#"><i class="icon-home"></i></a></h2>
+                </li>
+                <li class="crumb_btn">
+                    <h2 class="crumb_title"><a href="#">동해정보</a><i class="icon-plus"></i></h2>
+                    <ul class="crumb_menu">
+                        <li>
+                            <a href="#">기상정보</a>
+                        </li>
+                        <li>
+                            <a href="#">서리정보</a>
+                        </li>
+                        <li>
+                            <a href="#">동해정보</a>
+                        </li>
+                        <li>
+                            <a href="#">병해충정보</a>
+                        </li>
+                        <li>
+                            <a href="#">커뮤니티</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="crumb_btn">
+                    <h2 class="crumb_title"><a href="#">동해지도</a><i class="icon-plus"></i></h2>
+                    <ul class="crumb_menu">
+                        <li>
+                            <a href="#">동해지도</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <section class="sub_map territory">
+            <div class="container">
+                <div>
+                    <div class="type">
+                        <ul>
+                            <li>
+                                <input id="select-type01" name="select-type" type="radio" checked>
+                                <label for="select-type01">감귤</label>
+                            </li>
+                            <li>
+                                <input id="select-type02" name="select-type" type="radio">
+                                <label for="select-type02">당근</label>
+                            </li>
+                            <li>
+                                <input id="select-type03" name="select-type" type="radio">
+                                <label for="select-type03">마늘</label>
+                            </li>
+                            <li>
+                                <input id="select-type04" name="select-type" type="radio">
+                                <label for="select-type04">무</label>
+                            </li>
+                            <li>
+                                <input id="select-type05" name="select-type" type="radio">
+                                <label for="select-type05">배추</label>
+                            </li>
+                            <li>
+                                <input id="select-type06" name="select-type" type="radio">
+                                <label for="select-type06">양파</label>
+                            </li>
+                            <li class="full">
+                                <input id="select-type07" name="select-type" type="radio">
+                                <label for="select-type07">선인장</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="freezing_map"></div>
+                    <div class="tip">
+                        <table>
+                            <tbody>
+                                <tr class="color">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>발생<span>없음</span></td>
+                                    <td>1시간</td>
+                                    <td>2시간</td>
+                                    <td>3시간</td>
+                                    <td>4시간</td>
+                                    <td>5시간</td>
+                                    <td>6시간<span>이상</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button>한파농작물 관리요령</button>
+                    </div>
+                </div>
+
+                <div class="search">
+                    <input type="text" placeholder="주소를 입력하세요.">
+                    <button><i class="icon-search"></i></button>
+                </div>
+
+                <div class="freezing_cast">
+                    <h4>2019년 03월 14일(목) 08시 기준</h4>
+                    <i>동해 발생이 없는 지역 입니다.</i>
+                </div>
+
+                <div class="freezing_info">
+                    <h4>동해 피해정보<i class="icon-help-circled-alt"></i></h4>
+                    <div>
+                        <p>감귤 -3.5℃</p>
+                        <span><i class="icon-block-1"></i>위험</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="graph freezing">
+            <div class="container">
+                <button><i class="icon-download-alt"></i>엑셀로 내려받기</button>
+                <h4>시간별 기온 예측</h4>
+                <div></div>
+            </div>
+        </div>
+
+    </div>
+    <!-- E:content -->
+    <!-- S:footer -->
+    <footer id="footer">
+        <div class="banner">
+            <div class="banner_wrap">
+                <a href="" class="banner1"><img src="images/banner1.gif" alt="농촌진흥청"></a>
+                <a href="" class="banner2"><img src="images/banner2.gif" alt="제주지방기상청"></a>
+                <a href="" class="banner3"><img src="images/banner3.gif" alt="농림축산검역본부"></a>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="footer_info">
+                <h2>푸터로고</h2>
+
+                <ul class="footer_util">
+                    <li>
+                        <a href="#">개인정보처리방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#">저작권보호정책</a>
+                    </li>
+                </ul>
+
+                <ul class="adress">
+                    <li>
+                        (690-701) 제주특별자치도 서귀포시 중산간서로 212(강정동)
+                    </li>
+                    <li>
+                        TEL (064)760-7541~3
+                    </li>
+                    <li>
+                        FAX (064)760-7599
+                    </li>
+                </ul>
+
+                <div class="btn">
+                    <button class="error">오류신고</button>
+                    <button class="mobile">모바일버전 바로가기</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- E:footer -->
+
+</body>
+
+</html>

@@ -661,12 +661,12 @@ body {
             }
         }
 
-        div.Allpopup {
+        div.pop {
             width: 100%;
             height: 1820px;
             background: rgba(0, 0, 0, .7);
             .absolute;
-            z-index: 9999999;
+            z-index: 99999999;
             top: 0;
             left: 0;
             right: 0;
@@ -675,12 +675,10 @@ body {
             div {
                 background: #fff;
                 .remCalc(width, 40);
-                .rem(height, 400);
                 .rem(margin, 200 auto 0);
                 
                 @media all and (min-width: 1200px) {
                     width: 900px;
-                    height: 800px;
                     margin: 300px auto 0;
                 }
 
@@ -694,7 +692,7 @@ body {
 
                     @media all and (min-width: 1200px) {
                         padding: 16px;
-                        font-size: 16px;
+                        font-size: 18px;
                     }
 
                     i {
@@ -706,6 +704,249 @@ body {
                         @media all and (min-width: 1200px) {
                             right: 16px;
                             font-size: 18px;
+                        }
+                    }
+                }
+            }
+
+            &.Allpopup {
+                
+                div {
+                    .rem(height, 400);
+
+                    @media all and (min-width: 1200px) {
+                        height: 800px;
+                    }
+                }
+            }
+
+            &.freezing_popup {
+                h4 {
+                    margin: 0;
+                }
+    
+                table {
+                    width: 100%;
+                    height: 100%;
+    
+                    thead {
+                        .center;
+                        background: #ebebeb;
+    
+                        tr {
+    
+                            th {
+                                border-right: 1px solid #ccc;
+                                border-bottom: 1px solid #ccc;
+                                font-weight: 400;
+                                .rem(font-size, 10);
+                                .rem(padding, 10 0);
+    
+                                &:nth-child(1) {
+                                    .rem(width, 60);
+                                    .rem(padding, 5 10);
+
+                                    @media all and (min-width: 1200px) {
+                                        width: 120px;
+                                    }
+                                }
+    
+                                &:nth-child(3) {
+                                    border-right: none;
+                                    .rem(width, 100);
+
+                                    @media all and (min-width: 1200px) {
+                                        width: 200px;
+                                    }
+                                }
+
+                                @media all and (min-width: 1200px) {
+                                    font-size: 16px;
+                                    padding: 20px 0;
+                                }
+                            }
+                        }
+                    }
+    
+                    tbody {
+                        .center;
+                        
+                        tr {
+    
+                            &:nth-child(4) {
+                                
+                                td {
+                                    border-bottom: none;
+                                }
+                            }
+    
+                            td {
+                                border-right: 1px solid #ccc;
+                                border-bottom: 1px solid #ccc;
+                                .rem(font-size, 10);
+                                .rem(padding, 20 10);
+                                .rem(height, 60);
+                                .rem(line-height, 16);
+
+                                @media all and (min-width: 1200px) {
+                                    font-size: 16px;
+                                    padding: 40px 20px;
+                                }
+    
+                                &:nth-child(1) {
+                                    .rem(width, 60);
+                                }
+    
+                                &:nth-child(3) {
+                                    border-right: none;
+                                    .rem(width, 100);
+                                    .rem(padding, 12 0 20);
+
+                                    @media all and (min-width: 1200px) {
+                                        padding: 20px 0 30px;
+                                    }
+                                }
+
+                                p {
+                                    .rem(margin, 0 0 10 0);
+                                    .rem(font-size, 10);
+    
+                                    @media all and (min-width: 1200px) {
+                                        font-size: 16px;
+                                        margin: 0 0 15px 0;
+                                    }
+                                }
+    
+                                span {
+                                    background: #0174bd;
+                                    color: @white;
+                                    .rem(padding, 6 14);
+                                    border-radius: 3px;
+                                    .rem(font-size, 10);
+
+                                    &.attention {
+                                        background: #ffcc22;
+                                    }
+
+                                    &.warning {
+                                        background: #ff6600;
+                                    }
+
+                                    &.danger {
+                                        background: #e60000;
+                                    }
+
+                                    @media all and (min-width: 1200px) {
+                                        font-size: 16px;
+                                        padding: 10px 20px;
+                                    }
+    
+                                    i {
+                                        .rem(font-size, 12);
+                                        .middle;
+                                        .rem(margin-right, 3);
+    
+                                        @media all and (min-width: 1200px) {
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.tip_popup {
+
+                div {
+                    .rem(height, 400);
+                    .rem(padding-bottom, 15);
+
+                    @media all and (min-width: 1200px) {
+                        height: 800px;
+                        padding-bottom: 30px;
+                    }
+
+                    h4 {
+                        margin: 0;
+                    }
+
+                    div {
+                        overflow: scroll;
+                        margin: 0;
+                        width: 100%;
+                        height: 100%;
+
+                        h5 {
+                            .center;
+                            .rem(font-size, 12);
+    
+                            @media all and (min-width: 1200px) {
+                                font-size: 18px;
+                            }
+                        }
+    
+                        p {
+                            .rem(font-size, 10);
+                            .rem(padding-left, 20);
+                            .rem(margin, 5 0);
+                            color: #222;
+    
+                            @media all and (min-width: 1200px) {
+                                font-size: 16px;
+                                padding-left: 40px;
+                                margin: 10px 0;
+                            }
+    
+                            &.tip_title {
+                                .rem(font-size, 12);
+                                .rem(margin, 10 0);
+                                color: @main;
+    
+                                @media all and (min-width: 1200px) {
+                                    font-size: 18px;
+                                }
+                            }
+    
+                            &.top {
+                                .rem(margin-top, 40);
+    
+                                @media all and (min-width: 1200px) {
+                                    margin-top: 60px;
+                                }
+                            }
+                        }
+    
+                        ul {
+                            .rem(font-size, 12);
+                            .rem(margin, 0 0 10 0);
+                            color: #555;
+                            .rem(padding-left, 40);
+    
+                            @media all and (min-width: 1200px) {
+                                font-size: 18px;
+                                padding-left: 80px;
+    
+                            }
+    
+                            li {
+                                .rem(font-size, 10);
+                                .rem(margin-top, 5);
+    
+                                @media all and (min-width: 1200px) {
+                                    font-size: 16px;
+                                    margin-top: 14px;
+                                }
+    
+                                ul {
+                                    .rem(padding-left, 10);
+    
+                                    @media all and (min-width: 1200px) {
+                                        padding-left: 25px;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -2355,6 +2596,356 @@ body {
                 height: 550px;
             }
 
+/******* sub_freezing *******/
+            &.territory {
+
+                .container {
+                    .rem(padding, 30 10);
+
+                    div.type {
+                        .relative;
+
+                        @media all and (min-width: 1200px) {
+                            .absolute;
+                            left: 0;
+                            top: 65px;
+                            z-index: 99;
+                        }
+
+                        ul {
+                            .mapazero;
+                            .no-list;
+                            background: @white;
+                            .remCalc(width, 100% - 30);
+                            width: 100%;
+                            margin: 0 auto;
+                            .rem(padding, 8 15 5 25);
+                            border: 1px solid #ccc;
+
+                            @media all and (min-width: 1200px) {
+                                width: 740px;
+                                padding: 15px 28px 15px 50px;
+                            }
+
+                            li {
+                                .inline-block;
+                                .rem(width, 50);
+                                .rem(margin-bottom, 8);
+
+                                @media all and (min-width: 1200px) {
+                                    margin-bottom: 0;
+                                }
+
+                                &.full {
+                                    .rem(width, 50);
+
+                                    @media all and (min-width: 1200px) {
+                                        width: 100px;
+                                    }
+                                }
+
+                                @media all and (min-width: 1200px) {
+                                    width: 90px;
+                                }
+                                
+                                input {
+                                    .none;
+                                }
+
+                                label {
+                                    .rem(font-size, 10);
+
+                                    @media all and (min-width: 1200px) {
+                                        font-size: 14px;
+                                    }
+
+                                    &::before {
+                                        content: "";
+                                        .inline-block;
+                                        .rem(width, 6);
+                                        .rem(height, 6);
+                                        .rem(margin, 2 8 0 0);
+                                        background: #eee;
+                                        border: 4px solid #fff;
+                                        border-radius: 50%;
+                                        .drop-shadow();
+                                        .top;
+
+                                        @media all and (min-width: 1200px) {
+                                            margin: 0 10px 0 0;
+                                            border-width: 4px;
+                                            width: 10px;
+                                            height: 10px;
+                                            .bottom;
+                                        }
+                                    }
+                                }
+
+                                input:checked + label {
+
+                                    &::before {
+                                        background: #f3740b;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    div.freezing_map {
+                        width: 100%;
+                        .rem(height, 200);
+                        background: @white;
+                        border: 1px solid #ccc;
+                        border-top: none;
+
+                        @media all and (min-width: 1200px) {
+                            .absolute;
+                            left: 0;
+                            top: 65px;
+                            width: 740px;
+                            height: 364px;
+                        }
+                    }
+
+                    .tip {
+                        width: 100%;
+                        .rem(margin, 10 0 20);
+
+                        @media all and (min-width: 1200px) {
+                            width: 740px;
+                            .absolute;
+                            left: 0;
+                            bottom: 40px;
+                        }
+
+                        table {
+                            .remCalc(width, 90);
+                            .inline-block;
+
+                            @media all and (min-width: 1200px) {
+                                width: 560px;
+                            }
+
+                            tbody {
+
+                                tr {
+                                    .center;
+
+                                    &.color {
+
+                                        td {
+                                            &:nth-child(1) {
+                                                background: #C4C4C4;
+                                            }
+        
+                                            &:nth-child(2) {
+                                                background: #A6E386;;
+                                            }
+        
+                                            &:nth-child(3) {
+                                                background: #F3E785;
+                                            }
+        
+                                            &:nth-child(4) {
+                                                background: #EBAC80;
+                                            }
+        
+                                            &:nth-child(5) {
+                                                background: #DC7E7E;
+                                            }
+        
+                                            &:nth-child(6) {
+                                                background: #9A7EF2;
+                                            }
+        
+                                            &:nth-child(7) {
+                                                background: #A2E1F5;
+                                            }
+                                        }
+                                    }
+                                    
+                                    td {
+                                        .rem(font-size, 8);
+                                        .rem(height, 10);
+                                        .rem(width, 60);
+                                        .rem(padding, 5 0);
+                                        .top;
+
+                                        @media all and (min-width: 1200px) {
+                                            width: 80px;
+                                            font-size: 12px;
+                                        }
+
+                                        span {
+                                            .block;
+
+                                            @media all and (min-width: 1200px) {
+                                                .inline-block;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        button {
+                            background: @main;
+                            color: @white;
+                            border: none;
+                            .rem(width, 85);
+                            border-radius: 3px;
+                            outline: none;
+                            .rem(font-size, 8);
+                            .rem(padding, 5);
+                            .pointer;
+                            .top;
+
+                            @media all and (min-width: 1200px) {
+                                font-size: 14px;
+                                width: 160px;
+                                padding: 10px;
+                                margin-left: 15px;
+                            }
+                        }
+                    }
+
+                    .search {
+                        width: 100%;
+
+                        @media all and (min-width: 1200px) {
+                            width: 380px;
+                        }
+                    }
+
+                    .freezing_cast {
+                        width: 100%;
+                        border: 1px solid #ccc;
+                        .rem(padding, 0 0 20);
+                        .center;
+
+                        @media all and (min-width: 1200px) {
+                            .absolute;
+                            right: 0;
+                            top: 115px;
+                            width: 380px;
+                            padding: 0 0 30px;
+                        }
+
+                        h4 {
+                            .rem(margin, 20 0 10);
+                            .rem(font-size, 12);
+                            font-weight: 400;
+                            color: #454545;
+
+                            @media all and (min-width: 1200px) {
+                                font-size: 16px;
+                                margin: 30px 0 20px;
+                            }
+                        }
+
+                        i {
+                            .rem(font-size, 12);
+                            color: #454545;
+                            font-style: normal;
+
+                            @media all and (min-width: 1200px) {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+
+                    .freezing_info {
+                        width: 100%;
+                        .rem(margin-top, 20);
+
+                        @media all and (min-width: 1200px) {
+                            .absolute;
+                            top: 240px;
+                            right: 0;
+                            width: 380px;
+                        }
+
+                        h4 {
+                            .relative;
+                            background: #454545;
+                            color: @white;
+                            font-weight: 400;
+                            margin: 0;
+                            .rem(padding, 8 10);
+                            .rem(font-size, 12);
+
+                            @media all and (min-width: 1200px) {
+                                padding: 12px 20px;
+                                font-size: 16px;
+                            }
+
+                            i {
+                                .absolute;
+                                .rem(right, 10);
+                                .rem(font-size, 14);
+                                .pointer;
+
+                                @media all and (min-width: 1200px) {
+                                    right: 20px;
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+
+                        div {
+                            .center;
+                            border: 1px solid #ccc;
+                            .rem(padding, 20 0);
+
+                            @media all and (min-width: 1200px) {
+                                padding: 30px 0 38px 0;   
+                            }
+
+                            p {
+                                .rem(margin, 0 0 12 0);
+                                .rem(font-size, 12);
+
+                                @media all and (min-width: 1200px) {
+                                    font-size: 16px;
+                                    margin: 0 0 20px 0;
+                                }
+                            }
+
+                            span {
+                                background: #e60000;
+                                color: @white;
+                                .rem(padding, 6 14);
+                                border-radius: 3px;
+                                .rem(font-size, 10);
+
+                                @media all and (min-width: 1200px) {
+                                    font-size: 16px;
+                                    padding: 10px 20px;
+                                }
+
+                                i {
+                                    .rem(font-size, 14);
+                                    .middle;
+                                    .rem(margin-right, 3);
+
+                                    @media all and (min-width: 1200px) {
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .info_btn {
+                        width: 100%;
+
+                        @media all and (min-width: 1200px) {
+                            width: 380px;
+                        }
+                    }
+                }
+            }
+
             div.container {
                 .rem(padding, 30 0);
                
@@ -2365,7 +2956,7 @@ body {
                     margin: 0 auto;
                     padding: 0;
                 }
-
+ 
                 div.map_wrap {
                     .relative;
                     width: 100%;
@@ -3033,6 +3624,14 @@ body {
 
                 @media all and (min-width: 1200px) {
                     margin: 60px 0 40px 0;
+                }
+            }
+
+            &.freezing {
+                .rem(margin, 70 0 40 0);
+
+                @media all and (min-width: 1200px) {
+                    margin: 100px 0 60px 0;
                 }
             }
 

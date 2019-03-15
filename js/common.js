@@ -158,7 +158,7 @@ $(document).ready(function() {
 
     // popup 
 
-    $(".Allpopup").hide();
+    $(".pop").hide();
 
     $(".info_btn").click(function() {
         $(".Allpopup").css("display", "block");
@@ -166,6 +166,22 @@ $(document).ready(function() {
 
     $(".Allpopup i").click(function() {
         $(".Allpopup").css("display", "none");
+    });
+
+    $(".freezing_info i").click(function() {
+        $(".freezing_popup").css("display", "block");
+    });
+
+    $(".freezing_popup i").click(function() {
+        $(".freezing_popup").css("display", "none");
+    });
+
+    $(".tip button").click(function() {
+        $(".tip_popup").css("display", "block");
+    });
+
+    $(".tip_popup i").click(function() {
+        $(".tip_popup").css("display", "none");
     });
 
     //date
