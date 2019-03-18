@@ -5306,6 +5306,101 @@ body {
         }
 
 
+/******* sitemap *******/
+
+        section.site {
+
+            .container {
+                background: none;
+                width: 100%;
+                .rem(padding, 10);
+                .rem(margin, 40 0 20);
+
+                @media all and (min-width: 1200px) {
+                    width: 1200px;
+                    margin: 80px auto 20px;   
+                }
+
+                div {
+
+                    &.m_right {
+
+                        @media all and (min-width: 1200px) {
+                            margin: 0;
+                        }
+                    }
+
+                    @media all and (min-width: 1200px) {
+                        width: 380px;
+                        .inline-block;
+                        .top;
+                        margin-right: 16px;
+                        margin-bottom: 40px;
+                    }
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        clear: both;
+                    }
+
+                    h2 {
+                        background: #f7f7f7;
+                        border-top: 1px solid #ccc;
+                        border-bottom: 1px solid #ccc;
+                        .rem(padding, 8 0 8 10);
+                        .rem(font-size, 12);
+                        font-weight: 400;
+                        margin: 0;
+
+                        @media all and (min-width: 1200px) {
+                            font-size: 18px;
+                            padding: 16px 0;
+                            .center;
+                        }
+
+                        &.top {
+
+                            @media all and (min-width: 1200px) {
+                            }
+                        }
+                    }
+
+                    ul {
+                        .rem(padding, 10);
+
+                        @media all and (min-width: 1200px) {
+                            .center;
+                            width: 100%;
+                            .inline-block;
+                        }
+
+                        li {
+                            .rem(height, 20);
+                            .rem(margin, 5 0);
+
+                            @media all and (min-width: 1200px) {
+                                height: 40px;
+                            }
+
+                            a {
+                                .block;
+                                .rem(font-size, 10);
+                                height: 100%;
+                                .rem(line-height, 20);
+
+                                @media all and (min-width: 1200px) {
+                                    font-size: 18px;
+                                    line-height: 40px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
 /******* error *******/
 
         div.error_notice {
