@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>병해충방제정보시스템</title>
+
+
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+
+    <!-- S:header -->
+    <header id="header">
+
+        <div class="container">
+            <div class="logo">
+                <h1><a href="#">로고</a></h1>
+            </div>
+
+            <button class="mobile_menu">메뉴열기<i class="icon-menu"></i></button>
+            <button class="mobile_login" 로그인><i class="icon-user"></i></button>
+        </div>
+        <!-- S:main_menu -->
+        <div class="pop Allpopup">
+            <div>
+                <h4>전체지점 관측정보<i class="icon-esc"></i></h4>
+            </div>
+        </div>
+        <nav id="main_menu">
+            <div class="container">
+                <ul class="gnb">
+                    <li>
+                        <h2>
+                            <a href="">기상정보</a>
+                        </h2>
+                        <ul class="first">
+                            <li>
+                                <a class="active" href="">
+                                    <span>기상지도</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>기상통계</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>계절기상관측</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>기상용어</span></a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="">서리정보</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>서리지도</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>서리통계</span></a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="">동해정보</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>동해지도</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="">병해충정보</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>병해충지도</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>국가관리병해충</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="">커뮤니티</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>공지사항</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>상담게시판</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>갤러리</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>동영상</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="util_menu">
+                    <li><a href=""><i class="icon-user"></i>로그인</a></li>
+                    <li><a href=""><i class="icon-th-large"></i>사이트맵</a></li>
+                </ul>
+
+            </div>
+        </nav>
+        <!-- E:main_menu -->
+    </header>
+    <!-- E:header -->
+    <!-- S:content -->
+    <div id="content">
+        <section class="title_wrap">
+            <div class="container">
+                <h3>
+                    <p>서리지도</p>
+                    <img src="images/sub_frost.jpg" alt="서리지도">
+                </h3>
+            </div>
+        </section>
+
+        <div class="crumb">
+            <ul>
+                <li class="home_btn">
+                    <h2><a href="#"><i class="icon-home"></i></a></h2>
+                </li>
+                <li class="crumb_btn">
+                    <h2 class="crumb_title"><a href="#">서리정보</a><i class="icon-plus"></i></h2>
+                    <ul class="crumb_menu">
+                        <li>
+                            <a href="#">기상정보</a>
+                        </li>
+                        <li>
+                            <a href="#">서리정보</a>
+                        </li>
+                        <li>
+                            <a href="#">동해정보</a>
+                        </li>
+                        <li>
+                            <a href="#">병해충정보</a>
+                        </li>
+                        <li>
+                            <a href="#">커뮤니티</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="crumb_btn">
+                    <h2 class="crumb_title"><a href="#">서리지도</a><i class="icon-plus"></i></h2>
+                    <ul class="crumb_menu">
+                        <li>
+                            <a href="#">서리지도</a>
+                        </li>
+                        <li>
+                            <a href="#">서리통계</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <section class="sub_map frost">
+            <div class="container">
+
+                <div class="search">
+                    <input type="text" placeholder="주소를 입력하세요.">
+                    <button><i class="icon-search"></i></button>
+                </div>
+
+                <div class="frost_map">
+                    <div class="select">
+                        <ul>
+                            <li>
+                                <input id="select-type01" name="select-type" type="radio" checked>
+                                <label for="select-type01">오늘</label>
+                            </li>
+                            <li>
+                                <input id="select-type02" name="select-type" type="radio">
+                                <label for="select-type02">내일</label>
+                            </li>
+                            <li>
+                                <input id="select-type03" name="select-type" type="radio">
+                                <label for="select-type03">모레</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="weather_info frost_info">
+                    <h3 class="weather_title">제주센터 | <small>21일(목) 오전 10:00 기준</small></h3>
+
+                    <ul>
+                        <li>
+                            <strong>발생가능</strong>
+                            <u>0℃</u>
+                        </li>
+                        <li>
+                            <strong>초상온도</strong>
+                            <u>0℃</u>
+                        </li>
+                        <li>
+                            <strong>습도</strong>
+                            <u>0℃</u>
+                        </li>
+                        <li>
+                            <strong>온도</strong>
+                            <u>0℃</u>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="frost_legend">
+                    <h4>서리발생 가능성 범례</h4>
+                    <div>
+                        <span><i class="icon-circle red"></i>강한 서리 가능성이 있음</span>
+                        <span><i class="icon-circle yellow"></i>약한 서리 가능성이 있음</span>
+                        <span><i class="icon-circle blue"></i>서리 발생 가능성이 없음</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="graph frost_time">
+            <div class="container">
+                <h4>시간별 기온 예측</h4>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="graph frost_statistics">
+            <div class="container">
+                <button><i class="icon-download-alt"></i>엑셀로 내려받기</button>
+                <h4>서리발생 예측통계</h4>
+                <div></div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- E:content -->
+    <!-- S:footer -->
+    <footer id="footer">
+        <div class="banner">
+            <div class="banner_wrap">
+                <a href="" class="banner1"><img src="images/banner1.gif" alt="농촌진흥청"></a>
+                <a href="" class="banner2"><img src="images/banner2.gif" alt="제주지방기상청"></a>
+                <a href="" class="banner3"><img src="images/banner3.gif" alt="농림축산검역본부"></a>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="footer_info">
+                <h2>푸터로고</h2>
+
+                <ul class="footer_util">
+                    <li>
+                        <a href="#">개인정보처리방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#">저작권보호정책</a>
+                    </li>
+                </ul>
+
+                <ul class="adress">
+                    <li>
+                        (690-701) 제주특별자치도 서귀포시 중산간서로 212(강정동)
+                    </li>
+                    <li>
+                        TEL (064)760-7541~3
+                    </li>
+                    <li>
+                        FAX (064)760-7599
+                    </li>
+                </ul>
+
+                <div class="btn">
+                    <button class="error">오류신고</button>
+                    <button class="mobile">모바일버전 바로가기</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- E:footer -->
+
+</body>
+
+</html>

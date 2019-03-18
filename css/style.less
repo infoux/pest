@@ -1693,7 +1693,7 @@ body {
                         .absolute;
                         .rem(top, 100);
                         .rem(right, 0);
-        
+
                         @media all and (min-width: 1200px) {
                             width:  460px;
                             height: 300px;
@@ -1701,7 +1701,7 @@ body {
                             top: 70px;
                             right: 0;
                         }
-        
+
                         h3.weather_title {
                             color: @white;
                             .rem(font-size, 14);
@@ -3600,6 +3600,231 @@ body {
                     }
                 }
             }
+
+/******* sub_frost *******/
+            &.frost {
+
+                .container {
+                    .rem(padding, 30 10);
+                    
+                    .frost_map {
+                        background: @white;
+                        width: 100%;
+                        .rem(height, 200);
+                        .rem(margin-top, 20);
+
+                        @media all and (min-width: 1200px) {
+                            .absolute;
+                            top: 65px;
+                            left: 0;
+                            margin-top: 0;
+                            width: 740px;
+                            height: 419px;
+                        }
+
+                        .select {
+                            .relative;
+
+                            ul {
+                                .absolute;
+                                .rem(top, 10);
+                                .rem(left, 10);
+                                z-index: 999;
+                                .mapazero;
+                                .no-list;
+                                background: @white;
+                                .rem(width, 166);
+                                margin: 0 auto;.rem(padding, 5 0 5 14);
+                                border: 1px solid #ccc;
+    
+                                @media all and (min-width: 1200px) {
+                                    width: 260px;
+                                    padding: 10px 0 10px 20px;
+                                }
+    
+                                li {
+                                    .inline-block;
+                                    .rem(width, 46);
+                                    margin-bottom: 0;
+    
+                                    @media all and (min-width: 1200px) {
+                                        width: 75px;
+                                    }
+                                    
+                                    input {
+                                        .none;
+                                    }
+    
+                                    label {
+                                        .rem(font-size, 10);
+    
+                                        @media all and (min-width: 1200px) {
+                                            font-size: 14px;
+                                        }
+    
+                                        &::before {
+                                            content: "";
+                                            .inline-block;
+                                            .rem(width, 6);
+                                            .rem(height, 6);
+                                            .rem(margin, 2 8 0 0);
+                                            background: #eee;
+                                            border: 4px solid #fff;
+                                            border-radius: 50%;
+                                            .drop-shadow();
+                                            .top;
+    
+                                            @media all and (min-width: 1200px) {
+                                                margin: 0 10px 0 0;
+                                                border-width: 4px;
+                                                width: 10px;
+                                                height: 10px;
+                                                .bottom;
+                                            }
+                                        }
+                                    }
+    
+                                    input:checked + label {
+    
+                                        &::before {
+                                            background: #f3740b;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .search {
+                        width: 100%;
+
+                        @media all and (min-width: 1200px) {
+                            width: 380px;
+                        }
+                    }
+
+                    .frost_info {
+                        width: 100%;
+                        .rem(margin-top, 20);
+
+                        @media all and (min-width: 1200px) {
+                            width: 380px;
+                            height: 180px;
+                            margin-top: 70px;
+                        }
+
+                        ul {
+                            .rem(margin-bottom, 10);
+
+                            li {
+        
+                                u {
+                                    .rem(width, 34);
+        
+                                    @media all and (min-width: 1200px) {
+                                        width: 60px;
+                                    }
+                                }
+                            }    
+                        }
+                    }
+
+                    .frost_legend {
+                        width: 100%;
+                        .rem(margin-top, 20);
+
+                        @media all and (min-width: 1200px) {
+                            .absolute;
+                            top: 310px;
+                            right: 0;
+                            width: 380px;
+                        }
+
+                        h4 {
+                            .relative;
+                            background: #454545;
+                            color: @white;
+                            font-weight: 400;
+                            margin: 0;
+                            .rem(padding, 8 10);
+                            .rem(font-size, 12);
+                            .center;
+
+                            @media all and (min-width: 1200px) {
+                                padding: 12px 20px;
+                                font-size: 16px;
+                            }
+
+                            i {
+                                .absolute;
+                                .rem(right, 10);
+                                .rem(font-size, 14);
+                                .pointer;
+
+                                @media all and (min-width: 1200px) {
+                                    right: 20px;
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+
+                        div {
+                            .center;
+                            border: 1px solid #ccc;
+                            .rem(padding, 10 0);
+
+                            @media all and (min-width: 1200px) {
+                                padding: 12px 0;   
+                            }
+
+                            p {
+                                .rem(margin, 0 0 12 0);
+                                .rem(font-size, 12);
+
+                                @media all and (min-width: 1200px) {
+                                    font-size: 16px;
+                                    margin: 0 0 20px 0;
+                                }
+                            }
+
+                            span {
+                                color: #454545;
+                                .rem(padding, 6 14);
+                                border-radius: 3px;
+                                .rem(font-size, 12);
+                                .block;
+
+                                @media all and (min-width: 1200px) {
+                                    font-size: 16px;
+                                    padding: 5px 20px;
+                                }
+
+                                i {
+                                    .rem(font-size, 14);
+                                    .middle;
+                                    .rem(margin-right, 20);
+
+                                    @media all and (min-width: 1200px) {
+                                        font-size: 16px;
+                                    }
+
+                                    &.red {
+                                        color: #e60000;
+                                    }
+
+                                    &.yellow {
+                                        color: #ffcc22;
+                                    }
+
+                                    &.blue {
+                                        color: #0174bd;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         div.graph {
@@ -3632,6 +3857,22 @@ body {
 
                 @media all and (min-width: 1200px) {
                     margin: 100px 0 60px 0;
+                }
+            }
+
+            &.frost_time {
+                .rem(margin, 40 0 30 0);
+
+                @media all and (min-width: 1200px) {
+                    margin: 60px 0 40px 0;
+                }
+            }
+
+            &.frost_statistics {
+                .rem(margin, 50 0 40 0);
+
+                @media all and (min-width: 1200px) {
+                    margin: 80px 0 60px 0;
                 }
             }
 
