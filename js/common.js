@@ -134,7 +134,6 @@ $(document).ready(function() {
 
     $(".crumb_btn").click(function() {
         $(this).find(".crumb_menu").slideToggle();
-        return false;
     })
 
     // img

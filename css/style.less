@@ -4687,13 +4687,13 @@ body {
 
                 .detail {
                     border-bottom: 1px solid #ebebeb;
-                    .rem(height, 34);
+                    // .rem(height, 34);
                     .rem(line-height, 34);
                     .rem(padding, 0 10);
                     color: #454545;
 
                     @media all and (min-width: 1200px) {
-                        height: 58px;
+                        // height: 58px;
                         line-height: 58px;
                         padding: 0 20px;
                     }
@@ -4746,6 +4746,29 @@ body {
                         @media all and (min-width: 1200px) {
                             font-size: 16px;
                             padding-left: 20px;
+                        }
+                    }
+                }
+
+                .files {
+
+                    dl {
+                        dd {
+                            .block;
+                            .rem(margin-left, 87);
+
+                            @media all and (min-width: 1200px) {
+                                margin-left: 100px;
+                            }
+
+                            &.inline {
+                                .inline-block;
+                                .rem(margin-left, 25);
+
+                                @media all and (min-width: 1200px) {
+                                    margin-left: 40px;
+                                }
+                            }
                         }
                     }
                 }
@@ -5357,12 +5380,6 @@ body {
                             font-size: 18px;
                             padding: 16px 0;
                             .center;
-                        }
-
-                        &.top {
-
-                            @media all and (min-width: 1200px) {
-                            }
                         }
                     }
 
