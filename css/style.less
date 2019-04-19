@@ -4837,55 +4837,26 @@ body {
                     .input_file {
                         .block;
     
-                        // input[type="file"] {
-                        //     .absolute;
-                        //     padding: 0;
-                        //     margin: -1px;
-                        //     clip: rect(0, 0, 0, 0);
-                        //     border: 0 none;
-                        //     width: 1px;
-                        //     height: 1px;
-                        //     .hidden;
-                        // }
+                        input[type="file"] {
+                            .rem(font-size, 12);
+                            color: #333;
 
-                        // .file_label {
-                        //     .inline-block;
-                        //     background: #f7f7f7;
-                        //     border: 1px solid #ccc;
-                        //     color: #454545;
-                        //     .pointer;
-                        //     .rem(height, 22);
-                        //     .rem(line-height, 22);
-                        //     .rem(font-size, 10);
-                        //     .rem(padding, 0 8);
-                        //     .rem(margin-left, 2);
+                            @media all and (min-width: 1200px) {
+                                font-size: 16px;
+                            }
+                        }
+
+                        .file_label {
+                            .inline-block;
+                            .rem(font-size, 12);
+                            color: #333;
                             
-                        //     @media all and (min-width: 1200px) {
-                        //         height: 34px;
-                        //         line-height: 34px;
-                        //         padding: 0 10px;
-                        //         font-size: 14px;
-                        //         margin-left: 5px;
-                        //     }
-                        // }
-
-                        // .file_name {
-                        //     border: 1px solid #ccc;
-                        //     .bottom;
-                        //     .rem(width, 120);
-                        //     .rem(height, 22);
-                        //     .rem(line-height, 22);
-                        //     .rem(font-size, 10);
-                        //     .rem(padding-left, 2);
-
-                        //     @media all and (min-width: 1200px) {
-                        //         width: 200px;
-                        //         height: 34px;
-                        //         line-height: 34px;
-                        //         padding-left: 5px;
-                        //         font-size: 14px;
-                        //     }
-                        // }
+                            @media all and (min-width: 1200px) {
+                                height: 34px;
+                                line-height: 34px;
+                                font-size: 16px;
+                            }
+                        }
                     }
                 }
 
