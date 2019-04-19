@@ -4861,6 +4861,26 @@ body {
                 }
 
                 .board_text {
+
+                    &.board_detail {
+                        width: 100%;
+                        border: 2px solid #ebebeb;
+                        .rem(padding, 10);
+                        .rem(font-size, 12);
+                        .rem(min-height, 200);
+                        .rem(margin-bottom, 20);
+                        border-top-color:transparent;
+                        border-right-color:transparent;
+                        border-left-color:transparent;
+
+                        
+                        @media all and (min-width: 1200px) {
+                            padding: 10px 20px 10px 20px;
+                            font-size: 16px;
+                            min-height: 500px;
+                            margin-bottom: 20px;
+                        }
+                    }
                 
                     textarea {
                         width: 100%;
