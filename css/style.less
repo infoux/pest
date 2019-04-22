@@ -5473,7 +5473,7 @@ body {
                     .inline-block;
                     .top;
                     width: 180px;
-                    font-size: 16px;
+                    font-size: 17px;
                     margin: 0;
                     background: none;
                 }
@@ -5533,6 +5533,7 @@ body {
                     width: 960px;
                     margin-left: 40px;
                     padding: 0 20px 40px 20px;
+                    font-size: 18px;
 
                     &.full {
                         width:1200px;
@@ -5541,16 +5542,75 @@ body {
 
                 }
 
+                &.service {
+
+                    table {
+                        border-spacing:0;
+                        padding: 0;
+                        border-collapse: collapse;
+                        border-top: 1px solid #ccc;
+                        line-height: 1.4;
+                        margin-top: 10px;
+                        width: 100%;
+                        .rem(font-size, 9);
+
+                        @media all and (min-width: 1200px) {
+                            font-size: 18px;
+                        }
+
+
+                        td {
+                            color: #555;
+                            .rem(padding, 5);
+                            word-break: keep-all;
+
+                            span {
+                                .block;
+
+                                @media all and (min-width: 1200px) {
+                                    .inline-block;
+                                }
+                            }
+                        }
+
+                        th,
+                        td {
+                            .rem(padding, 5);
+                            .center;
+                            border: 1px solid #ccc;
+                            border-left: none;
+                            border-top: none;
+                            &:first-child {
+                            border-left: 1px solid #ccc;
+                            }
+
+                            span {
+                                .block;
+
+                                @media all and (min-width: 1200px) {
+                                    .inline-block;
+                                }
+                            }
+                        }
+                    }
+
+                    p {
+                        span.point {
+                            color: @main;
+                        }
+                    }
+                }
+
                 &.protect {
                     
                     p {
-                        color: #000;
+                        color: #555;
                         .rem(font-size, 12);
                         .rem(margin-bottom, 30);
                         .rem(line-height, 20);
 
                         @media all and (min-width: 1200px) {
-                            font-size: 16px;
+                            font-size: 18px;
                             margin-bottom: 30px;
                             line-height: 26px;
                         }
@@ -5570,19 +5630,19 @@ body {
                     }
 
                     ul {
-                        color: #000;
+                        color: #555;
                         .rem(font-size, 12);
                         .rem(line-height, 20);
 
                         @media all and (min-width: 1200px) {
-                            font-size: 16px;
+                            font-size: 18px;
                             line-height: 26px;
                         }
                     }
                 }
 
                 h4 {
-                    .rem(font-size, 16);
+                    .rem(font-size, 18);
                     .rem(margin, 20 0 30 0);
                     .rem(padding-bottom, 10);
                     .center;
@@ -5590,7 +5650,7 @@ body {
 
                     @media all and (min-width: 1200px) {
                         .left;
-                        font-size: 22px;
+                        font-size: 24px;
                         margin: 10px 0 30px 0;
                         padding-bottom: 10px;
                     }
@@ -5602,44 +5662,54 @@ body {
                     .bold;
 
                     @media all and (min-width: 1200px) {
-                        font-size: 18px;
+                        font-size: 20px;
                         
                     }
                 }
 
                 h5 {
-                    .rem(font-size, 12);
-                    .normal;
+                    .rem(font-size, 14);
                     .rem(margin-bottom, 2);
 
                     @media all and (min-width: 1200px) {
-                        font-size: 16px;
+                        font-size: 20px;
                         margin-bottom: 5px;
                     }
                 }
 
                 p {
-                    color: #454545;
-                    .rem(font-size, 10);
-                    .rem(line-height, 16);
+                    color: #555;
+                    .rem(font-size, 12);
+                    .rem(line-height, 20);
 
                     @media all and (min-width: 1200px) {
-                        font-size: 14px;
-                        line-height: 24px;
+                        font-size: 18px;
+                        line-height: 28px;
                     }
                 }
 
                 ul {
                     .no-list;
                     .mapazero;
-                    color: #454545;
-                    .rem(font-size, 10);
-                    .rem(line-height, 16);
+                    color: #555;
+                    .rem(font-size, 12);
+                    .rem(line-height, 20);
                     .rem(margin-top, 10);
 
                     @media all and (min-width: 1200px) {
-                        font-size: 14px;
-                        line-height: 24px;
+                        font-size: 18px;
+                        line-height: 28px;
+                    }
+
+                    li {
+
+                        ul.paragraph {
+                            .rem(margin, 0 0 10 12);
+
+                            @media all and (min-width: 1200px) {
+                                margin: 0 0 20px 20px;
+                            }
+                        }
                     }
                 }
             }
@@ -5994,7 +6064,7 @@ body {
 
                 @media all and (min-width: 1200px) {
                     width: 1200px;
-                    height: 110px;
+                    height: 140px;
                     padding-top: 0;
                 }
                 
@@ -6010,7 +6080,7 @@ body {
                         .absolute;
                         width: 100px;
                         height: 70px;
-                        top: 20px;
+                        top: 35px;
                     }
                 }
 
@@ -6063,7 +6133,8 @@ body {
                 ul.adress {
                     .no-list;
                     .mapazero;
-                    .center;.rem(margin, 0 auto);
+                    .center;
+                    .rem(margin, 0 auto 10 auto);
                     .rem(line-height, 14);
                     .rem(width, 246);
 
@@ -6115,6 +6186,24 @@ body {
                     }
                 }
 
+                p {
+                    color: #ddd;
+                    .rem(margin-top, 30);
+                    .rem(font-size, 9);
+                    .rem(width, 280);
+                    .center;
+                    margin: 0 auto;
+                    .rem(line-height, 14);
+
+                    @media all and (min-width: 1200px) {
+                        width: 100%;
+                        font-size: 14px;
+                        .absolute;
+                        bottom: 35px;
+                        left: -22px;
+                    }
+                }
+
                 div.btn {
                     .rem(width, 134);
                     margin: 0 auto;
@@ -6129,7 +6218,7 @@ body {
     
                         @media all and (min-width: 1200px) {
                             .absolute;
-                            bottom: 40px;
+                            bottom: 80px;
                             right: 160px;
                             padding: 7px 12px;
                             font-size: 14px;
@@ -6147,7 +6236,7 @@ body {
     
                         @media all and (min-width: 1200px) {
                             .absolute;
-                            bottom: 40px;
+                            bottom: 80px;
                             right: 0;
                             padding: 7px 12px;
                             font-size: 14px;
