@@ -3960,7 +3960,7 @@ body {
                 margin-bottom: 50px;
             }
 
-            &.observatory_info {
+            &.infomation {
                 .rem(margin-bottom, 30);
 
                 @media all and (min-width: 1200px) {
@@ -3996,6 +3996,8 @@ body {
                         select {
                             margin-bottom: 0;
                         }
+
+                       
                     }
                  }
             }
@@ -4047,6 +4049,13 @@ body {
 
                             @media all and (min-width: 1200px) {
                                 margin-left: 50px;
+                            }
+                        }
+
+                        &.long {
+
+                            @media all and (min-width: 1200px) {
+                                width: 160px;
                             }
                         }
                     }
@@ -4145,7 +4154,7 @@ body {
                 }
             }
         }
-
+        
         section.weather_list {
             .rem(padding, 0 10);
 
@@ -4206,6 +4215,286 @@ body {
             }
         }
 
+/******* sub_pest *******/ 
+
+        div.pest_menu {
+            width: 100%;
+            background: #f4f4f4;
+
+            ul {
+                .no-list;
+                margin: 0;
+                .rem(padding, 10 0);
+                .center;
+
+                @media all and (min-width: 1200px) {
+                    width: 1200px;
+                    margin: 0 auto;
+                    padding: 20px 0;
+                }
+
+
+                li {
+                    .inline-block;
+                    .rem(margin-right, 30);
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    @media all and (min-width: 1200px) {
+                        margin-right: 40px;
+                    }
+
+                    a {
+                        .block;
+                        .rem(font-size, 12);
+
+                        @media all and (min-width: 1200px) {
+                            font-size: 16px;
+                        }
+
+                        &.on {
+                            color: @main;
+                        }
+                    }
+
+                    &:hover {
+
+                        a {
+                            color: @main;
+                        }
+                    }
+                }
+            }
+        }
+
+        div.checked {
+            .rem(padding, 0 10);
+
+            @media all and (min-width: 1200px) {
+                padding: 0;
+            }
+
+            div.word {
+                .center;
+                background: #efefef;
+                border-radius: 5px;
+                .rem(margin, 20 0);
+                .rem(padding, 8 8 12 8);
+    
+                @media all and (min-width: 1200px) {
+                    width: 1200px;
+                    margin: 30px auto 40px auto;
+                    font-size: 16px;
+                    padding: 20px 20px 25px 20px;
+                }
+    
+                input[type="radio"] {
+                    .inline-block;
+                    .none;
+                }
+    
+                input[type="radio"]:checked + label{
+                    background: @main;
+                    color: @white;
+                }
+    
+                label {
+                    background: #fff;
+                    .pointer;
+                    .inline-block;
+                    .rem(font-size, 10);
+                    .rem(line-height, 20);
+                    .rem(margin-top, 4);
+                    .rem(width, 20);
+
+                    @media all and (min-width: 1200px) {
+                        width: 38px;
+                        line-height: 35px;
+                        border-radius: 5px;
+                        margin-right: 5px;
+                        margin-top: 8px;
+                        font-size: 14px;
+                    }
+
+                    &.all {
+                        .rem(width, 30);
+
+                        @media all and (min-width: 1200px) {
+                            width: 55px;
+                        }
+                    }
+                }
+            }
+    
+            p.notice {
+                .rem(font-size, 10);
+    
+                @media all and (min-width: 1200px) {
+                    width: 1200px;
+                    margin: 0 auto;
+                    font-size: 16px;
+                }
+    
+                span {
+                    color: @main;
+                }
+            }
+        }
+
+/******* sub_regulation *******/ 
+
+        div.kinds {
+            width: 100%;
+            .rem(padding, 0 10);
+
+            @media all and (min-width: 1200px) {
+                width: 1200px;
+                margin: 0 auto;
+            }
+
+            &:last-child {
+                .rem(margin-bottom, 50);
+
+                @media all and (min-width: 1200px) {
+                    margin-bottom: 60px;
+                }
+            }
+
+            h4 {
+                color: @main;
+                .rem(font-size, 14);
+                .normal;
+                .rem(margin-top, 40);
+
+                @media all and (min-width: 1200px) {
+                    font-size: 20px;
+                    margin-top: 50px;
+                }
+            }
+
+            p {
+                color: #333;
+                .rem(font-size, 12);
+                .rem(margin, 30 0 10 0);
+
+                @media all and (min-width: 1200px) {
+                    font-size: 16px;
+                    margin: 40px 0 5px 0;
+                }
+            }
+
+            .container {
+                width: 100%;
+                border-spacing: 0;
+                border-collapse: collapse;
+                .rem(font-size, 10);
+
+                @media all and (min-width: 1200px) {
+                    width: 1200px;
+                    margin: 10px auto 20px auto;
+                    font-size: 16px;
+                }
+
+                table {
+                    width: 100%;
+                    border-spacing: 0;
+                    border-top: 2px solid @main;
+                    overflow-x: scroll;
+
+                    tbody {
+    
+                        th {
+                            font-weight: 400;
+                            .rem(padding, 12 0);
+                            .middle;
+                            .center;
+                            background: #f7f7f7;
+                            border-right: 1px solid #ddd;
+                            color: #333;
+                            .rem(font-size, 10);
+                            .rem(width, 150);
+
+                            &:last-child {
+                                border: none;
+                            }
+    
+                            @media all and (min-width: 1200px) {
+                                width: 240px;
+                                padding: 18px 0;
+                                font-size: 16px;
+                            }
+
+                            &.number {
+
+                                @media all and (min-width: 1200px) {
+                                    width: 80px;
+                                }
+                            }
+                        }
+                        
+                        tr {
+
+                            &.three {
+
+                                td {
+                                    background: #f7f7f7;
+                                    border-top: 1px solid #ddd;
+                                    border-bottom: none;
+
+                                    &:last-child {
+                                        border-right: 1px solid #ddd;
+                                    }
+                                }
+                            }
+
+                            td {
+                                .rem(padding, 12 5);
+                                border-right: 1px solid #ddd;
+                                border-bottom: 1px solid #ebebeb;
+                                .middle;
+                                .center;
+                                color: #454545;
+                                .rem(line-height, 16);
+                                .rem(font-size, 10);
+
+                                &:last-child {
+                                    border-right: none;
+                                }
+        
+                                @media all and (min-width: 1200px) {
+                                    padding: 18px 0;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            ul {
+                .no-list;
+                padding: 0;
+                .rem(margin, 20 0);
+
+                li {
+                    .rem(font-size, 10);
+                    .rem(line-height, 18);
+                    color: #333;
+
+                    @media all and (min-width: 1200px) {
+                        font-size: 16px;
+                        line-height: 30px;
+                    }
+
+                    span {
+                        color: @main;
+                        .block;
+                    }
+                }
+            }
+        }
 
 /******* sub_terminology *******/ 
 
@@ -4293,7 +4582,6 @@ body {
                 }
             }
         }
-
 
 /******* sub_notice *******/
 
@@ -5135,6 +5423,7 @@ body {
         }
 
        .observatory_table {
+
         .rem(padding, 0 10);
 
         @media all and (min-width: 1200px) {

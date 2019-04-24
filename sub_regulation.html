@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>병해충방제정보시스템</title>
+
+
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/jquery-ui.js"></script>
+</head>
+
+<body>
+
+    <!-- S:header -->
+    <header id="header">
+
+        <div class="container">
+            <div class="logo">
+                <h1><a href="#">로고</a></h1>
+            </div>
+
+            <button class="mobile_menu">메뉴열기<i class="icon-menu"></i></button>
+            <button class="mobile_login" 로그인><i class="icon-user"></i></button>
+        </div>
+        <!-- S:main_menu -->
+        <nav id="main_menu">
+            <div class="container">
+                <ul class="gnb">
+                    <li>
+                        <h2>
+                            <a href="">기상정보</a>
+                        </h2>
+                        <ul class="first">
+                            <li>
+                                <a class="active" href="">
+                                    <span>기상지도</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>기상통계</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>계절기상관측</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>기상용어</span></a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="">서리정보</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>서리지도</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>서리통계</span></a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="">동해정보</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>동해지도</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="">병해충정보</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>병해충지도</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>국가관리병해충</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="">커뮤니티</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>공지사항</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>상담게시판</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>갤러리</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>동영상</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="util_menu">
+                    <li><a href=""><i class="icon-user"></i>로그인</a></li>
+                    <li><a href=""><i class="icon-th-large"></i>사이트맵</a></li>
+                </ul>
+
+            </div>
+        </nav>
+        <!-- E:main_menu -->
+    </header>
+    <!-- E:header -->
+    <!-- S:content -->
+    <div id="content">
+        <section class="title_wrap">
+            <div class="container">
+                <h3>
+                    <p>국가관리병해충</p>
+                    <img src="images/pest.jpg" alt="국가관리병해충">
+                </h3>
+            </div>
+        </section>
+
+        <div class="crumb">
+            <ul>
+                <li class="home_btn">
+                    <h2><a href="#"><i class="icon-home"></i></a></h2>
+                </li>
+                <li class="crumb_btn">
+                    <h2 class="crumb_title"><a href="#">병해충정보</a><i class="icon-plus"></i></h2>
+                    <ul class="crumb_menu">
+                        <li>
+                            <a href="#">기상정보</a>
+                        </li>
+                        <li>
+                            <a href="#">서리정보</a>
+                        </li>
+                        <li>
+                            <a href="#">동해정보</a>
+                        </li>
+                        <li>
+                            <a href="#">병해충정보</a>
+                        </li>
+                        <li>
+                            <a href="#">커뮤니티</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="crumb_btn">
+                    <h2 class="crumb_title"><a href="#">국가관리병해충</a><i class="icon-plus"></i></h2>
+                    <ul class="crumb_menu">
+                        <li>
+                            <a href="#">병해충지도</a>
+                        </li>
+                        <li>
+                            <a href="#">국가관리병해충</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="crumb_btn">
+                    <h2 class="crumb_title"><a href="#">규제비검역병해충</a><i class="icon-plus"></i></h2>
+                    <ul class="crumb_menu">
+                        <li>
+                            <a href="#">금지병해충</a>
+                        </li>
+                        <li>
+                            <a href="#">관리병해충</a>
+                        </li>
+                        <li>
+                            <a href="#">규제비검역병해충</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="pest_menu">
+            <ul>
+                <li><a href="#" class="on">규제비검역병</a></li>
+                <li><a href="#">규제비검역해충</a></li>
+            </ul>
+        </div>
+
+        <div class="kinds">
+            <h4>곡물종자류</h4>
+            <p>가. 벼</p>
+            <div class="container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th rowspan="2" class="number">번호</th>
+                            <th rowspan="2">병해충/잡초명</th>
+                            <th rowspan="2">학명</th>
+                            <th colspan="3">최고한도(%)</th>
+                            <th rowspan="2">비고</th>
+                        </tr>
+                        <tr class="three">
+                            <td>원원종</td>
+                            <td>원종</td>
+                            <td>보급종</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>키다리병</td>
+                            <td>Gibberella fujikuroi</td>
+                            <td>2.0</td>
+                            <td>5.0</td>
+                            <td>5.0</td>
+                            <td>특정병</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>선충심고병</td>
+                            <td>Aphelenchoides besseyi</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>특정병</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>도열병</td>
+                            <td>Pyricularia oryzae</td>
+                            <td>5.0</td>
+                            <td>10.0</td>
+                            <td>10.0</td>
+                            <td>기타병</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>깨씨무늬병(호마엽고병)</td>
+                            <td>Cochliobolus miyabeanus</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>피</td>
+                            <td>Echinochloa cursgalli<br>(하위분류군 포함)</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>기타잡초</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>물달개비</td>
+                            <td>Monochoria vaginalis</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>여뀌</td>
+                            <td>Polygonum hydropiper</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>마디꽃</td>
+                            <td>Rotala indica</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>사마귀풀</td>
+                            <td>Aneilema Keisak</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>올챙이고랭이</td>
+                            <td>Scirpus juncoides</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <ul>
+                <li>1) 최고 한도란 식물검역 과정에서 합격 조치되는 해당 병해충 감염율의 허용한도를 말하며, 학명에서 2종 이상을 묶은 것들의 합 을 기준하여야 함.(이하같다) <span>(예) 1번 키다리병 원원종의 감염율이 1.2%이고, 2번 선충심고병 원원종의 감염율이 0.5%이면, 그 합이 1.7%로서 최고한도 2.0%이하에 해당되므로 수입이 허용됨</span></li>
+                <li>2) 비고란의 특정병, 기타병, 특정잡초 및 기타잡초는 종자산업법의 종자관리요강에서 규제한 내용임. (이하같다)</li>
+            </ul>
+        </div>
+
+        <div class="kinds">
+            <p>나. 대맥, 과맥</p>
+            <div class="container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th rowspan="2" class="number">번호</th>
+                            <th rowspan="2">병해충/잡초명</th>
+                            <th rowspan="2">학명</th>
+                            <th colspan="3">최고한도(%)</th>
+                            <th rowspan="2">비고</th>
+                        </tr>
+                        <tr class="three">
+                            <td>원원종</td>
+                            <td>원종</td>
+                            <td>보급종</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>겉깜부기병</td>
+                            <td>Ustilago nuda</td>
+                            <td>0.0</td>
+                            <td>2.0</td>
+                            <td>1.0</td>
+                            <td>특정병</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>속깜부기병</td>
+                            <td>Ustilago hordei</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>보리줄무늬병</td>
+                            <td>Pyrenophora graminea</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>붉은곰팡이병</td>
+                            <td>Gibberella zeae</td>
+                            <td>5.0</td>
+                            <td>10.0</td>
+                            <td>10.0</td>
+                            <td>기타병</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>냉이</td>
+                            <td>Capsella bursa-pastoris</td>
+                            <td>0.03</td>
+                            <td>0.05</td>
+                            <td>0.1</td>
+                            <td>기타잡초</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>뚝새풀</td>
+                            <td>Alopecurus aequalis</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="kinds">
+            <p>다. 소맥</p>
+            <div class="container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th rowspan="2" class="number">번호</th>
+                            <th rowspan="2">병해충/잡초명</th>
+                            <th rowspan="2">학명</th>
+                            <th colspan="3">최고한도(%)</th>
+                            <th rowspan="2">비고</th>
+                        </tr>
+                        <tr class="three">
+                            <td>원원종</td>
+                            <td>원종</td>
+                            <td>보급종</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>겉깜부기병</td>
+                            <td>Ustilago nuda</td>
+                            <td>0.0</td>
+                            <td>2.0</td>
+                            <td>1.0</td>
+                            <td>특정병</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>버린깜부기병</td>
+                            <td>Tilletia caries</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>붉은곰팡이병</td>
+                            <td>Gibberella zeae</td>
+                            <td>5.0</td>
+                            <td>10.0</td>
+                            <td>10.0</td>
+                            <td>기타병</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>냉이</td>
+                            <td>Capsella bursa-pastoris</td>
+                            <td>0.03</td>
+                            <td>0.05</td>
+                            <td>0.1</td>
+                            <td>기타잡초</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>뚝새풀</td>
+                            <td>Alopecurus aequalis</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="kinds">
+            <p>라. 콩</p>
+            <div class="container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th rowspan="2" class="number">번호</th>
+                            <th rowspan="2">병해충/잡초명</th>
+                            <th rowspan="2">학명</th>
+                            <th colspan="3">최고한도(%)</th>
+                            <th rowspan="2">비고</th>
+                        </tr>
+                        <tr class="three">
+                            <td>원원종</td>
+                            <td>원종</td>
+                            <td>보급종</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>자주무늬병</td>
+                            <td>Cercospora kikuchii</td>
+                            <td>3.0</td>
+                            <td>5.0</td>
+                            <td>5.0</td>
+                            <td>특정병</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>모자이크병</td>
+                            <td>Soybean mosaic virus</td>
+                            <td>5.0</td>
+                            <td>10.0</td>
+                            <td>10.0</td>
+                            <td>기타병</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>세균성점무늬병</td>
+                            <td>Pseudomonas syringae pv. glycinea</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>불마름병(엽소병)</td>
+                            <td>Xanthomonas campestris pv.glycines</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>탄저병</td>
+                            <td>Glomerella glycines</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>새삼</td>
+                            <td>Cuscuta genus</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>특정잡초</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="kinds">
+            <p>마. 옥수수</p>
+            <div class="container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th rowspan="2" class="number">번호</th>
+                            <th rowspan="2">병해충/잡초명</th>
+                            <th rowspan="2">학명</th>
+                            <th colspan="2">최고한도(%)</th>
+                            <th rowspan="2">비고</th>
+                        </tr>
+                        <tr class="three">
+                            <td>원원종</td>
+                            <td>원종</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>깨씨무늬병</td>
+                            <td>Cochliobolus heterostrophus</td>
+                            <td>2.0</td>
+                            <td>5.0</td>
+                            <td>특정병</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>깜부기병</td>
+                            <td>Ustilago maydis</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>굵은곰팡이병</td>
+                            <td>Gibberella zeae</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="kinds">
+            <p>바. 팥</p>
+            <div class="container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th rowspan="2" class="number">번호</th>
+                            <th rowspan="2">병해충/잡초명</th>
+                            <th rowspan="2">학명</th>
+                            <th colspan="3">최고한도(%)</th>
+                            <th rowspan="2">비고</th>
+                        </tr>
+                        <tr class="three">
+                            <td>원원종</td>
+                            <td>원종</td>
+                            <td>보급종</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>콩세균병</td>
+                            <td>Xanthomonas campestris pv. glycines</td>
+                            <td>3.0</td>
+                            <td>5.0</td>
+                            <td>5.0</td>
+                            <td>특정병</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>갈반병</td>
+                            <td>Mycosphaerella phaseolicola</td>
+                            <td>5.0</td>
+                            <td>10.0</td>
+                            <td>10.0</td>
+                            <td>기타병</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>탄저병</td>
+                            <td>Colletotrichum phaseolorum</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="kinds">
+            <p>사. 녹두</p>
+            <div class="container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th rowspan="2" class="number">번호</th>
+                            <th rowspan="2">병해충/잡초명</th>
+                            <th rowspan="2">학명</th>
+                            <th colspan="3">최고한도(%)</th>
+                            <th rowspan="2">비고</th>
+                        </tr>
+                        <tr class="three">
+                            <td>원원종</td>
+                            <td>원종</td>
+                            <td>보급종</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>갈반병</td>
+                            <td>Mycosphaerella phaseolicola</td>
+                            <td>5.0</td>
+                            <td>10.0</td>
+                            <td>10.0</td>
+                            <td>기타병</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>새삼</td>
+                            <td>Cuscuta genus</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>특정잡초</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="kinds">
+            <h4>특용작물종자류</h4>
+            <p>가. 땅콩</p>
+            <div class="container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th rowspan="2" class="number">번호</th>
+                            <th rowspan="2">병해충/잡초명</th>
+                            <th rowspan="2">학명</th>
+                            <th colspan="3">최고한도(%)</th>
+                            <th rowspan="2">비고</th>
+                        </tr>
+                        <tr class="three">
+                            <td>원원종</td>
+                            <td>원종</td>
+                            <td>보급종</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>갈색무늬병</td>
+                            <td>Cercospora arachidicoa</td>
+                            <td>1.0</td>
+                            <td>3.0</td>
+                            <td>3.0</td>
+                            <td>특정병</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>검은무늬병</td>
+                            <td>Cercospora personata</td>
+                            <td>2.0</td>
+                            <td>5.0</td>
+                            <td>10.0</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>균핵병</td>
+                            <td>Sclerotinia miyabeana</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>기타병</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="kinds">
+            <p>나. 참깨</p>
+            <div class="container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th rowspan="2" class="number">번호</th>
+                            <th rowspan="2">병해충/잡초명</th>
+                            <th rowspan="2">학명</th>
+                            <th colspan="3">최고한도(%)</th>
+                            <th rowspan="2">비고</th>
+                        </tr>
+                        <tr class="three">
+                            <td>원원종</td>
+                            <td>원종</td>
+                            <td>보급종</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>역병</td>
+                            <td>Phytophthora nicotianae var. parasitica</td>
+                            <td>1.0</td>
+                            <td>3.0</td>
+                            <td>3.0</td>
+                            <td>특정병</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>시들을병(위조병)</td>
+                            <td>Fusarium oxysporum f. sp. vasinfectum</td>
+                            <td>2.0</td>
+                            <td>5.0</td>
+                            <td>10.0</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>입마름병(엽고병)</td>
+                            <td>Corynespora cassiicola</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>기타병</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="kinds">
+            <p>다. 유채</p>
+            <div class="container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th rowspan="2" class="number">번호</th>
+                            <th rowspan="2">병해충/잡초명</th>
+                            <th rowspan="2">학명</th>
+                            <th colspan="3">최고한도(%)</th>
+                            <th rowspan="2">비고</th>
+                        </tr>
+                        <tr class="three">
+                            <td>원원종</td>
+                            <td>원종</td>
+                            <td>보급종</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>균핵병</td>
+                            <td>Phytophthora nicotianae var. parasitica</td>
+                            <td>1.0</td>
+                            <td>3.0</td>
+                            <td>3.0</td>
+                            <td>특정병</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>시들을병(위조병)</td>
+                            <td>Fusarium oxysporum f. sp. vasinfectum</td>
+                            <td>2.0</td>
+                            <td>5.0</td>
+                            <td>10.0</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>입마름병(엽고병)</td>
+                            <td>Corynespora cassiicola</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>기타병</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="kinds">
+            <h4>채소종자류</h4>
+            <p>가. 오이, 참외, 수박, 호박, 박</p>
+            <div class="container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th rowspan="2" class="number">번호</th>
+                            <th rowspan="2">병해충/잡초명</th>
+                            <th rowspan="2">학명</th>
+                            <th colspan="3">최고한도(%)</th>
+                            <th rowspan="2">비고</th>
+                        </tr>
+                        <tr class="three">
+                            <td>원원종</td>
+                            <td>원종</td>
+                            <td>보급종</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>오이녹반모자이크병</td>
+                            <td>CGMMV</td>
+                            <td colspan="3">1.0</td>
+                            <td>특정병</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>오이녹반모자이크병 이외기타병</td>
+                            <td>CGMMV 이외 기타병</td>
+                            <td colspan="3">5.0(오이)<br>7.0(참외)<br>6.0(수박)<br>10.0(호박, 박)</td>
+                            <td>기타병</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="kinds">
+            <h4>종서류</h4>
+            <p>가. 감자</p>
+            <div class="container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th rowspan="2" class="number">번호</th>
+                            <th rowspan="2">병해충/잡초명</th>
+                            <th rowspan="2">학명</th>
+                            <th colspan="3">최고한도(%)</th>
+                            <th rowspan="2">비고</th>
+                        </tr>
+                        <tr class="three">
+                            <td>원원종</td>
+                            <td>원종</td>
+                            <td>보급종</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>둘레썩음병(윤부병)</td>
+                            <td>Clavibacter michiganense pv. sepedonicum</td>
+                            <td>1.0</td>
+                            <td>3.0</td>
+                            <td>3.0</td>
+                            <td>특정병</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>풋마름병</td>
+                            <td>Ralstonia solanacearum</td>
+                            <td>2.0</td>
+                            <td>5.0</td>
+                            <td>10.0</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>모자이크병</td>
+                            <td>Potato virus Y</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>기타병</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>잎말림병</td>
+                            <td>Potato leaf roll virus</td>
+                            <td>0.1</td>
+                            <td>0.2</td>
+                            <td>0.3</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>검은무늬썩음</td>
+                            <td>Rhizoctonia solani</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>병역병</td>
+                            <td>Phytophthora infestans</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>기타잡초</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>더뎅이병</td>
+                            <td>Streptomyces scabies</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="kinds">
+            <p>나. 고구마</p>
+            <div class="container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th rowspan="2" class="number">번호</th>
+                            <th rowspan="2">병해충/잡초명</th>
+                            <th rowspan="2">학명</th>
+                            <th colspan="3">최고한도(%)</th>
+                            <th rowspan="2">비고</th>
+                        </tr>
+                        <tr class="three">
+                            <td>원원종</td>
+                            <td>원종</td>
+                            <td>보급종</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>검읜무늬병</td>
+                            <td>Ceratocystis fimbriata</td>
+                            <td>1.0</td>
+                            <td>3.0</td>
+                            <td>3.0</td>
+                            <td>특정병</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>덩굴쪼김병</td>
+                            <td>Fusarium oxysporum f. sp. batatas</td>
+                            <td>2.0</td>
+                            <td>5.0</td>
+                            <td>10.0</td>
+                            <td>기타병</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>자문우병</td>
+                            <td>Helicobasidium mompa</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td>"</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>선충병</td>
+                            <td>Meloidogyne ingognita</td>
+                            <td>0.1</td>
+                            <td>0.2</td>
+                            <td>0.3</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- E:content -->
+    <!-- S:footer -->
+    <footer id="footer">
+        <div class="banner">
+            <div class="banner_wrap">
+                <a href="" class="banner1"><img src="images/banner1.gif" alt="농촌진흥청"></a>
+                <a href="" class="banner2"><img src="images/banner2.gif" alt="제주지방기상청"></a>
+                <a href="" class="banner3"><img src="images/banner3.gif" alt="농림축산검역본부"></a>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="footer_info">
+                <h2>푸터로고</h2>
+
+                <ul class="footer_util">
+                    <li>
+                        <a href="#">개인정보처리방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#">저작권보호정책</a>
+                    </li>
+                </ul>
+
+                <ul class="adress">
+                    <li>
+                        (690-701) 제주특별자치도 서귀포시 중산간서로 212(강정동)
+                    </li>
+                    <li>
+                        TEL (064)760-7541~3
+                    </li>
+                    <li>
+                        FAX (064)760-7599
+                    </li>
+                </ul>
+
+                <p>병해충예측모형은 서울대학교, 제주대학교, 감귤수출사업단, 감귤시험장에서 지원하였으며 서리판단 알고리즘은 제주지방기상청에서 지원하였습니다.</p>
+
+                <div class="btn">
+                    <button class="error">오류신고</button>
+                    <button class="mobile">모바일버전 바로가기</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- E:footer -->
+
+</body>
+
+</html>
