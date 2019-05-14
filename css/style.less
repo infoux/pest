@@ -1280,6 +1280,57 @@ body {
                         width: 1200px;
                     }
 
+                    ul.legend {
+                        .none;
+            
+                        @media all and (min-width: 1200px) {
+                            .block;
+                            .no-list;
+                            .mapazero;
+                            .absolute;
+                            top: 70px;
+                            left: 0;
+                            z-index: 999;
+                            background: rgba(255, 255, 255, .8);
+                            padding: 5px 20px;
+                        }
+            
+                        li {
+            
+                            @media all and (min-width: 1200px) {
+                                .inline-block;
+                                color: #D9043D;
+                                line-height: 20px;
+                                font-size: 12px;
+
+                                &:last-child {
+                                    margin-left: 10px;
+                                }
+            
+                                &::before {
+                                    content: "";
+                                    display: inline-block;
+                                    width: 10px;
+                                    height: 10px;
+                                    border-radius: 50%;
+                                    background: #D9043D;
+                                    margin-right: 5px;
+                                }
+                            }
+            
+                            &.blue {
+            
+                                @media all and (min-width: 1200px) {
+                                    color: #0903A6;
+                                  
+                                    &::before {
+                                        background: #0903A6;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
                     div.map {
                         width: 100%;
                         height: 100%;
@@ -1312,8 +1363,8 @@ body {
                             @media all and (min-width: 1200px) {
                                 width: 620px;
                                 height: 30px;
-                                top: 50px;
-                                left: 160px;
+                                top: 60px;
+                                left: 200px;
                                 .block;
                             }
 
@@ -1445,193 +1496,193 @@ body {
                                         }
 
                                         &.spot1 {
-                                            top: 145px;
-                                            left: 160px;
-                                        }
-
-                                        &.spot2 {
-                                            top: 75px;
-                                            left: 180px;
-                                        }
-
-                                        &.spot3 {
-                                            top: 90px;
+                                            top: 140px;
                                             left: 130px;
                                         }
 
+                                        &.spot2 {
+                                            top: 70px;
+                                            left: 160px;
+                                        }
+
+                                        &.spot3 {
+                                            top: 80px;
+                                            left: 90px;
+                                        }
+
                                         &.spot4 {
-                                            top: 120px;
-                                            left: 180px;
+                                            top: 110px;
+                                            left: 150px;
                                         }
 
                                         &.spot5 {
-                                            top: 55px;
-                                            left: 240px;
+                                            top: 40px;
+                                            left: 220px;
                                         }
 
                                         &.spot6 {
-                                            top: 80px;
+                                            top: 65px;
                                             left: 260px;
                                         }
 
                                         &.spot7 {
-                                            top: 105px;
-                                            left: 310px;
+                                            top: 90px;
+                                            left: 300px;
                                         }
 
                                         &.spot8 {
-                                            top: 50px;
-                                            left: 310px;
+                                            top: 30px;
+                                            left: 300px;
                                         }
 
                                         &.spot9 {
                                             top: 110px;
-                                            left: 380px;
+                                            left: 350px;
                                         }
 
                                         &.spot10 {
-                                            top: 25px;
-                                            left: 440px;
+                                            top: 10px;
+                                            left: 410px;
                                         }
 
                                         &.spot11 {
-                                            top: 32px;
-                                            left: 370px;
+                                            top: 10px;
+                                            left: 340px;
                                         }
 
                                         &.spot12 {
-                                            top: 50px;
-                                            left: 490px;
+                                            top: 40px;
+                                            left: 465px;
                                         }
 
                                         &.spot13 {
-                                            top: 75px;
-                                            left: 510px;
+                                            top: 70px;
+                                            left: 490px;
                                         }
 
                                         &.spot14 {
-                                            top: 70px;
-                                            left: 430px;
+                                            top: 60px;
+                                            left: 390px;
                                         }
 
                                         &.spot15 {
                                             top: 120px;
-                                            left: 520px;
+                                            left: 515px;
                                         }
 
                                         &.spot16 {
-                                            top: 160px;
-                                            left: 520px;
+                                            top: 150px;
+                                            left: 500px;
                                         }
 
                                         &.spot17 {
                                             top: 155px;
-                                            left: 445px;
+                                            left: 430px;
                                         }
 
                                         &.spot18 {
-                                            top: 200px;
-                                            left: 500px;
+                                            top: 180px;
+                                            left: 465px;
                                         }
 
                                         &.spot19 {
-                                            top: 220px;
-                                            left: 370px;
+                                            top: 210px;
+                                            left: 365px;
                                         }
 
                                         &.spot20 {
                                             top: 195px;
-                                            left: 430px;
+                                            left: 425px;
                                         }
 
                                         &.spot21 {
-                                            top: 270px;
-                                            left: 400px;
+                                            top: 250px;
+                                            left: 375px;
                                         }
 
                                         &.spot22 {
-                                            top: 245px;
-                                            left: 430px;
+                                            top: 235px;
+                                            left: 420px;
                                         }
 
                                         &.spot23 {
                                             top: 195px;
-                                            left: 330px;
+                                            left: 290px;
                                         }
 
                                         &.spot24 {
-                                            top: 220px;
+                                            top: 215px;
                                             left: 300px;
                                         }
 
                                         &.spot25 {
-                                            top: 290px;
-                                            left: 350px;
+                                            top: 270px;
+                                            left: 330px;
                                         }
 
                                         &.spot26 {
-                                            top: 245px;
-                                            left: 280px;
+                                            top: 235px;
+                                            left: 275px;
                                         }
 
                                         &.spot27 {
-                                            top: 270px;
+                                            top: 260px;
                                             left: 240px;
                                         }
 
                                         &.spot28 {
-                                            top: 245px;
-                                            left: 210px;
+                                            top: 235px;
+                                            left: 200px;
                                         }
 
                                         &.spot29 {
-                                            top: 220px;
-                                            left: 190px;
+                                            top: 210px;
+                                            left: 160px;
                                         }
 
                                         &.spot30 {
                                             top: 165px;
-                                            left: 70px;
+                                            left: 55px;
                                         }
 
                                         &.spot31 {
-                                            top: 270px;
-                                            left: 150px;
+                                            top: 260px;
+                                            left: 130px;
                                         }
 
                                         &.spot32 {
-                                            top: 240px;
-                                            left: 140px;
+                                            top: 230px;
+                                            left: 130px;
                                         }
 
                                         &.spot33 {
-                                            top: 290px;
-                                            left: 85px;
+                                            top: 250px;
+                                            left: 60px;
                                         }
 
                                         &.spot34 {
-                                            top: 230px;
-                                            left: 5px;
+                                            top: 220px;
+                                            left: -25px;
                                         }
 
                                         &.spot35 {
-                                            top: 230px;
-                                            left: 72px;
+                                            top: 210px;
+                                            left: 60px;
                                         }
 
                                         &.spot36 {
-                                            top: 190px;
-                                            left: 30px;
+                                            top: 170px;
+                                            left: -15px;
                                         }
 
                                         &.spot37 {
-                                            top: 140px;
-                                            left: 90px;
+                                            top: 135px;
+                                            left: 65px;
                                         }
 
                                         &.spot38 {
-                                            top: 115px;
-                                            left: 100px;
+                                            top: 105px;
+                                            left: 70px;
                                         }
                                     }
 
@@ -2621,60 +2672,15 @@ body {
             }
         }
 
-        ul.legend {
-            .none;
-
-            @media all and (min-width: 1200px) {
-                .block;
-                .no-list;
-                .mapazero;
-                .absolute;
-                top: 340px;
-                left: 490px;
-                z-index: 999;
-                background: @white;
-                padding: 8px 20px;
-            }
-
-            li {
-
-                @media all and (min-width: 1200px) {
-                    color: #D9043D;
-                    line-height: 20px;
-                    margin-bottom: 5px;
-                    font-size: 14px;
-
-                    &::before {
-                        content: "";
-                        display: inline-block;
-                        width: 10px;
-                        height: 10px;
-                        border-radius: 50%;
-                        background: #D9043D;
-                        margin-right: 5px;
-                    }
-                }
-
-                &.blue {
-
-                    @media all and (min-width: 1200px) {
-                        color: #0903A6;
-                      
-                        &::before {
-                            background: #0903A6;
-                        }
-                    }
-                }
-            }
-        }
-
+        
         section.sub_map {
             background: #eee;
 
             @media all and (min-width: 1200px) {
                 height: 550px;
+                .relative;
             }
-
+    
 /******* sub_freezing *******/
             &.territory {
 
@@ -3044,6 +3050,53 @@ body {
                     @media all and (min-width: 1200px) {
                         width: 730px;
                         padding: 70px 0 0 0;
+                    }
+
+                    ul.legend {
+                        .none;
+            
+                        @media all and (min-width: 1200px) {
+                            .block;
+                            .no-list;
+                            .mapazero;
+                            .absolute;
+                            top: 70px;
+                            left: 0;
+                            z-index: 999;
+                            background: @white;
+                            padding: 8px 20px;
+                        }
+            
+                        li {
+            
+                            @media all and (min-width: 1200px) {
+                                color: #D9043D;
+                                line-height: 20px;
+                                margin-bottom: 5px;
+                                font-size: 14px;
+            
+                                &::before {
+                                    content: "";
+                                    display: inline-block;
+                                    width: 10px;
+                                    height: 10px;
+                                    border-radius: 50%;
+                                    background: #D9043D;
+                                    margin-right: 5px;
+                                }
+                            }
+            
+                            &.blue {
+            
+                                @media all and (min-width: 1200px) {
+                                    color: #0903A6;
+                                  
+                                    &::before {
+                                        background: #0903A6;
+                                    }
+                                }
+                            }
+                        }
                     }
 
                     h3.map_img {
