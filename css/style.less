@@ -1375,6 +1375,44 @@ body {
                                     .rem(margin-bottom, 5);
                                     border-right: 1px solid #ccc;
 
+                                    &.red {
+
+                                        &.active {
+                                            &::before {
+                                                background: #D9042B;
+                                                border: 2px solid #D9042B;
+                                            }
+                                        }
+
+                                        &:hover {
+                                            &::before {
+                                                background: #D9042B;
+                                                border: 2px solid #D9042B;
+                                            }
+                                        }
+
+                                        a {
+
+                                            &.active {
+                                                color: @main;
+    
+                                                @media all and (min-width: 1200px) {
+                                                    background: #D9042B;
+                                                    color: @white;
+                                                }
+                                            }
+    
+                                            &:hover {
+                                                color: @main;
+    
+                                                @media all and (min-width: 1200px) {
+                                                    background: #D9042B;
+                                                    color: @white;
+                                                }
+                                            }
+                                        }
+                                    }
+
                                     @media all and (min-width: 1200px) {
                                         border: none;
                                         padding: 0;
@@ -1394,15 +1432,15 @@ body {
 
                                         &.active {
                                             &::before {
-                                                background: @main;
-                                                border: 2px solid @main;
+                                                background: #0903A6;
+                                                border: 2px solid #0903A6;
                                             }
                                         }
 
                                         &:hover {
                                             &::before {
-                                                background: @main;
-                                                border: 2px solid @main;
+                                                background: #0903A6;
+                                                border: 2px solid #0903A6;
                                             }
                                         }
 
@@ -1617,7 +1655,7 @@ body {
                                             color: @main;
 
                                             @media all and (min-width: 1200px) {
-                                                background: @main;
+                                                background: #0903A6;
                                                 color: @white;
                                             }
                                         }
@@ -1626,7 +1664,7 @@ body {
                                             color: @main;
 
                                             @media all and (min-width: 1200px) {
-                                                background: @main;
+                                                background: #0903A6;
                                                 color: @white;
                                             }
                                         }
@@ -2583,6 +2621,53 @@ body {
             }
         }
 
+        ul.legend {
+            .none;
+
+            @media all and (min-width: 1200px) {
+                .block;
+                .no-list;
+                .mapazero;
+                .absolute;
+                top: 340px;
+                left: 490px;
+                z-index: 999;
+                background: @white;
+                padding: 8px 20px;
+            }
+
+            li {
+
+                @media all and (min-width: 1200px) {
+                    color: #D9043D;
+                    line-height: 20px;
+                    margin-bottom: 5px;
+                    font-size: 14px;
+
+                    &::before {
+                        content: "";
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background: #D9043D;
+                        margin-right: 5px;
+                    }
+                }
+
+                &.blue {
+
+                    @media all and (min-width: 1200px) {
+                        color: #0903A6;
+                      
+                        &::before {
+                            background: #0903A6;
+                        }
+                    }
+                }
+            }
+        }
+
         section.sub_map {
             background: #eee;
 
@@ -2971,7 +3056,7 @@ body {
                             background: url("../images/map.png") no-repeat;
                             width: 730px;
                             height: 370px;
-                            margin-top: 20px;
+                            margin-top: 40px;
                         }
                     }
 
@@ -3094,6 +3179,43 @@ body {
                                 .rem(margin-bottom, 5);
                                 border-right: 1px solid #ccc;
 
+                                &.red {
+
+                                    &.active {
+                                        &::before {
+                                            background: #D9043D;
+                                            border: 2px solid #D9043D;
+                                        }
+                                    }
+
+                                    &:hover {
+                                        &::before {
+                                            background: #D9043D;
+                                            border: 2px solid #D9043D;
+                                        }
+                                    }
+
+                                    a {
+                                        &.active {
+                                            color: @main;
+    
+                                            @media all and (min-width: 1200px) {
+                                                color: @white;
+                                                background: #D9043D;
+                                            }
+                                        }
+    
+                                        &:hover {
+                                            color: @main;
+    
+                                            @media all and (min-width: 1200px) {
+                                                color: @white;
+                                                background: #D9043D;
+                                            }
+                                        }
+                                    }
+                                }
+
                                 @media all and (min-width: 1200px) {
                                     border: none;
                                     padding: 0;
@@ -3113,15 +3235,15 @@ body {
 
                                     &.active {
                                         &::before {
-                                            background: @main;
-                                            border: 2px solid @main;
+                                            background: #0903A6;
+                                            border: 2px solid #0903A6;
                                         }
                                     }
 
                                     &:hover {
                                         &::before {
-                                            background: @main;
-                                            border: 2px solid @main;
+                                            background: #0903A6;
+                                            border: 2px solid #0903A6;
                                         }
                                     }
 
@@ -3337,7 +3459,7 @@ body {
 
                                         @media all and (min-width: 1200px) {
                                             color: @white;
-                                            background: @main;
+                                            background: #0903A6;
                                         }
                                     }
 
@@ -3346,7 +3468,7 @@ body {
 
                                         @media all and (min-width: 1200px) {
                                             color: @white;
-                                            background: @main;
+                                            background: #0903A6;
                                         }
                                     }
                                 }
