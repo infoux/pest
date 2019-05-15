@@ -2638,12 +2638,12 @@ body {
 
                         @media all and (min-width: 1200px) {
                             .absolute;
-                            left: 0;
+                            left: -1px;
                             z-index: 9999999;
                             background: @white;
                             border: 1px solid #ccc;
                             width: 240px;
-                            height: 251px;
+                            height: auto;
                         }
 
                         li {
@@ -2651,8 +2651,20 @@ body {
                             border: none;
                             .rem(padding, 10 0 0 20);
 
+                            @media all and (min-width: 1200px) {
+                                width: 240px;
+                                height: 50px;
+                            }
+
                             &:last-child {
                                 .rem(padding-bottom, 10);
+                            }
+
+                            &:first-child {
+
+                                @media all and (min-width: 1200px) {
+                                    margin-top: 10px;
+                                }
                             }
 
                             a {
