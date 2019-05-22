@@ -17,7 +17,7 @@ $(document).ready(function() {
             /* mobile */
             $("body").addClass("mobile");
             $("body").removeClass("pc");
-
+			$(".spot_wrap").css("display", "none");
 
 
 
@@ -31,7 +31,7 @@ $(document).ready(function() {
             /* pc */
             $("body").addClass("pc");
             $("body").removeClass("mobile");
-
+			$(".spot_wrap").css("display", "block");
 
 
 
